@@ -1,1 +1,1 @@
-{"nom": "Pikachu", "vie": 100, "atck": 55, "deff": 40, "atck_spe": 55, "deff_spe": 50, "speed": 90, "atribut": "Electric", "lvl": 5, "xp": 100}
+{"id": 1, "nom": "Pikachu", "vie": 100, "atck": 55, "deff": 40, "atck_spe": 55, "deff_spe": 50, "speed": 90, "talant": "Electric", "lvl": 1, "xp": 100, "type": "normal", "xp_donnee": 250}
