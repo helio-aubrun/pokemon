@@ -49,5 +49,5 @@
     "48":{"nom":"desseliande", "Type":["Plante","Spectre"], "talent":"engrais","pv":85, "atk":110, "def":76, "atk_spe":65, "def_spe":82, "spe":56, "exp":166},
     "49":{"nom":"zorua", "Type":["Normal","Spectre"], "talent":"intimidation","pv":35, "atk":60, "def":40, "atk_spe":85, "def_spe":40, "spe":70, "exp":66},
     "50":{"nom":"zoroark", "Type":["Normal","Spectre"], "talent":"intimidation","pv":55, "atk":100, "def":60, "atk_spe":125, "def_spe":60, "spe":110, "exp":179},
-    "51":{"nom":"arceus", "Type":["Normal"], "talent":"intimidatiob","pv":120, "atk":120, "def":120, "atk_spe":120, "def_spe":120, "spe":120, "exp":324}
+    "51":{"nom":"arceus", "Type":["Normal"], "talent":"intimidation","pv":120, "atk":120, "def":120, "atk_spe":120, "def_spe":120, "spe":120, "exp":324}
 }
