@@ -1,4 +1,5 @@
 import json
+import class_attaque
 from math import floor
 class pkm():
 
@@ -14,11 +15,12 @@ class pkm():
         self.spe = floor(abs(abs((2*id.get("spe")+31)*lv / 100)+5))
         self.exp = id.get("exp")
         self.lv = lv
-        self.atk_possible = []
-        self.atk_apprise = []
         self.evo = id.get("evo")
         self.id = id.get("id")
-        self.attaque = id.get("attaques")
+        self.atk_id = id.get("attaques")
+        self.attaques = []
+        for i in range(len(id.get("attaques"))):
+            self.attaques.append(class_attaque.Attaque(id.get("attaques")[i]).attaque)
         self.sauvage = True
 
     '''def levelup(self):

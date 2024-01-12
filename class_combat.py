@@ -1,4 +1,5 @@
 import class_pkm
+import class_attaque
 import random
 import json
 class combat():
@@ -62,7 +63,7 @@ class combat():
         True
         if self.poke1.pv <= 0 or self.poke2.pv <= 0 :
             print ("Combat fini")
-            return False
+            self.testx = False
     
     def stab (self, attaque, poke):
         if attaque.type == poke.type:
@@ -73,47 +74,59 @@ class combat():
     def calcul_damage (self,attaque,poke_att,poke_def):
         number = random.uniform(0.85, 1)
         cm = self.stab(attaque, poke_att)*self.affinity(attaque, poke_def)*number
-        if attaque.categorie == "Physique":
+        if attaque.classe == "Physique":
             damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
-        elif attaque.categorie == "Spécial":
+            print (damage)
+        elif attaque.classe == "Spécial":
             damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk_spe*attaque.puissance)/poke_def.def_spe)/50)+2)*cm))
+            print (damage)
         return damage
     
     def en_combat(self):
-        while self.fin_combat():
-            print(self.poke1.attaque)
-            atk_poke1 = int(input("joueur 1 choisi attaque"))
-            print(self.poke2.attaque)
-            atk_poke2 = int(input("joueur 2 choisi attaque"))
-            self.speed
+        self.testx = True
+        while self.testx:
+            for i in range (0, len (self.poke1.attaques)):
+                print(f"attaques : {self.poke1.attaques[i]["nom"]}")
+            n = int(input("joueur 1 choisi attaque "))
+            id = self.poke1.atk_id[n-1]
+            atk_poke1 = class_attaque.Attaque(id)
+            for i in range (0, len (self.poke2.attaques)):
+                print(f"attaques : {self.poke2.attaques[i]["nom"]}")
+            n = int(input("joueur 2 choisi attaque "))
+            id = self.poke1.atk_id[n-1]
+            atk_poke2 = class_attaque.Attaque(id)
+            self.speed()
+            print (self.first.nom)
             if self.first == self.poke1:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
-                self.fin_combat
+                self.fin_combat ()
                 self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
                 print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
-                self.fin_combat
+                self.fin_combat ()
             elif self.first == self.poke2:
                 self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
                 print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
-                self.fin_combat
+                self.fin_combat ()
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
-                self.fin_combat
+                self.fin_combat ()
 
 with open("pokedex.json", "r") as f:
     pokedex = json.load(f)
-pokemon_29 = pokedex.get("29")
-pokemon_10 = pokedex.get("10")
+pokemon_29 = pokedex.get("1")
+pokemon_10 = pokedex.get("4")
 test = class_pkm.pkm(pokemon_29, 50)
 test2 = class_pkm.pkm(pokemon_10,50)
 print(f"Nom du Pokémon : {test.nom}")
 print(f"Type du Pokémon : {test.type}")
 print(f"pv : {test.pv}")
-test.evol ()
+''"test.evol ()"''
 print(f"Nom du Pokémon : {test.nom}")
 print(f"Type du Pokémon : {test.type}")
 print(f"pv : {test.pv}")
 print(f"Nom du Pokémon : {test2.nom}")
 print(f"Type du Pokémon : {test2.type}")
 print(f"pv : {test2.pv}")
+fight = combat(test,test2)
+fight.en_combat()
