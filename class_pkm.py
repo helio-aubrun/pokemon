@@ -18,6 +18,8 @@ class pkm():
         self.atk_apprise = []
         self.evo = id.get("evo")
         self.id = id.get("id")
+        self.attaque = id.get("attaques")
+        self.sauvage = True
 
     '''def levelup(self):
         self.lv+=1
@@ -30,12 +32,16 @@ class pkm():
         new_id = str(self.id+1)
         self.__init__(pokedex[new_id], self.lv)
 
+    def loose_pv(self,damage):
+        self.pv-=damage
+
 class pkm_dress(pkm):
 
     def __init__(self, id, lv=1):
         pkm.__init__(self, id, lv=1)
         self.barre_exp = 0
         self.lv = lv
+        self.sauvage = False
     
     '''def gain_exp(self):
         exp_gagné = (adv.exp * adv.lv) // (7 * joueur.nb_pk)
@@ -51,20 +57,7 @@ class pkm_dress(pkm):
 
 class pkm_adv(pkm):
 
-    def __init__(self, id, attaques, lv=1):
+    def __init__(self, id, lv=1):
         pkm.__init__(self, id, lv=1)
         self.lv = lv
-        self.attaques = attaques
-
-with open("pokedex.json", "r") as f:
-    pokedex = json.load(f)
-pokemon_30 = pokedex.get("30")
-if pokemon_30:
-    test = pkm(pokemon_30, 99)
-    print(f"Nom du Pokémon : {test.nom}")
-    print(f"Type du Pokémon : {test.type}")
-    print(f"pv : {test.pv}")
-    test.evol ()
-    print(f"Nom du Pokémon : {test.nom}")
-    print(f"Type du Pokémon : {test.type}")
-    print(f"pv : {test.pv}")
+        self.sauvage = False
