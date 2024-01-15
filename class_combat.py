@@ -9,6 +9,7 @@ class combat():
         self.poke2 = poke2
 
     def speed (self):
+        #choisi qui commence en fonction de la vitesse
         if self.poke1.spe > self.poke2.spe:
             self.first = self.poke1
             self.last = self.poke2
@@ -16,6 +17,7 @@ class combat():
             self.first = self.poke2
             self.last = self.poke1
         else :
+            #si vitesse egale alors choix aleatoire
             pokemons = [self.poke1, self.poke2]
             self.first = random.choice(pokemons)
             pokemons.remove(self.first)
@@ -24,32 +26,37 @@ class combat():
     def affinity (self,attaque,poke_def):
         self.attaque = attaque
         self.poke_def = poke_def
-        if self.attaque.type == "Plante" and self.poke_def.type == "Eau":
-            return 2
-        elif self.attaque.type == "Eau" and self.poke_def.type == "Feu":
-            return 2
-        elif self.attaque.type == "Feu" and self.poke_def.type == "Plante":
-            return 2
-        elif self.attaque.type == "Spectre" and self.poke_def.type == "Spectre":
-            return 2
-        elif self.attaque.type == "Plante" and self.poke_def.type == "Plante":
-            return 0.5
-        elif self.attaque.type == "Plante" and self.poke_def.type == "Feu":
-            return 0.5
-        elif self.attaque.type == "Feu" and self.poke_def.type == "Feu":
-            return 0.5
-        if self.attaque.type == "Feu" and self.poke_def.type == "Eau":
-            return 0.5
-        elif self.attaque.type == "Eau" and self.poke_def.type == "Eau":
-            return 0.5
-        elif self.attaque.type == "Eau" and self.poke_def.type == "Plante":
-            return 0.5
-        elif self.attaque.type == "Normal" and self.poke_def.type == "Spectre":
-            return 0
-        elif self.attaque.type == "Spectre" and self.poke_def.type == "Normal":
-            return 0
-        else:
-            return 1
+        prod = 1
+        i= 0
+        #parcour la liste des types pour renvoyer le multiplicateur de degat
+        for i in range(len(self.poke_def.type)):
+            if self.attaque.type == "Plante" and self.poke_def.type[i] == "Eau":
+                prod = prod * 2
+            elif self.attaque.type == "Eau" and self.poke_def.type[i] == "Feu":
+                prod = prod *  2
+            elif self.attaque.type == "Feu" and self.poke_def.type[i] == "Plante":
+                prod = prod *  2
+            elif self.attaque.type == "Spectre" and self.poke_def.type[i] == "Spectre":
+                prod = prod * 2
+            elif self.attaque.type == "Plante" and self.poke_def.type[i] == "Plante":
+                prod = prod * 0.5
+            elif self.attaque.type == "Plante" and self.poke_def.type[i] == "Feu":
+                prod = prod * 0.5
+            elif self.attaque.type == "Feu" and self.poke_def.type[i] == "Feu":
+                prod = prod * 0.5
+            if self.attaque.type == "Feu" and self.poke_def.type[i] == "Eau":
+                prod = prod * 0.5
+            elif self.attaque.type == "Eau" and self.poke_def.type[i] == "Eau":
+                prod = prod * 0.5
+            elif self.attaque.type == "Eau" and self.poke_def.type[i] == "Plante":
+                prod = prod * 0.5
+            elif self.attaque.type == "Normal" and self.poke_def.type[i] == "Spectre":
+                prod = prod * 0
+            elif self.attaque.type == "Spectre" and self.poke_def.type[i] == "Normal":
+                prod = prod * 0
+            else:
+                prod = prod * 1
+        return prod
         
     def precision (self,attaque):
         self.attaque = attaque
@@ -66,14 +73,18 @@ class combat():
             self.testx = False
     
     def stab (self, attaque, poke):
+        #si un poke utilise une attaque de sont type, les degats sont boostés
         if attaque.type == poke.type:
             return 1.5
         else:
             return 1
     
     def calcul_damage (self,attaque,poke_att,poke_def):
+        #les attaques n'inflige pas toujours le max de degats, number est la puissance atribué aleatoirement
         number = random.uniform(0.85, 1)
+        #cumule du stab et de l'affinité des types
         cm = self.stab(attaque, poke_att)*self.affinity(attaque, poke_def)*number
+        #calcule des degats en fonction de la categorie de l'attaque, physique ou special
         if attaque.classe == "Physique":
             damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
             print (damage)
@@ -84,7 +95,9 @@ class combat():
     
     def en_combat(self):
         self.testx = True
+        #boucle qui dure tant qu'un pokemon n'est pas ko
         while self.testx:
+            #parcours les attaques, stocke l'indice entrer par le joueur dans n puis stocke creer un objet de la class attaque avec l'id dans atk_poke
             for i in range (0, len (self.poke1.attaques)):
                 print(f"attaques : {self.poke1.attaques[i]["nom"]}")
             n = int(input("joueur 1 choisi attaque "))
@@ -97,6 +110,7 @@ class combat():
             atk_poke2 = class_attaque.Attaque(id)
             self.speed()
             print (self.first.nom)
+            #en fonction de qui attaque en premier, appele la methode loose_pv de la class pkm avec la methode calcul_damage et verifie si le combat est fini
             if self.first == self.poke1:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
@@ -112,10 +126,11 @@ class combat():
                 print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
                 self.fin_combat ()
 
+#test des methodes
 with open("pokedex.json", "r") as f:
     pokedex = json.load(f)
-pokemon_29 = pokedex.get("1")
-pokemon_10 = pokedex.get("4")
+pokemon_29 = pokedex.get("46")
+pokemon_10 = pokedex.get("43")
 test = class_pkm.pkm(pokemon_29, 50)
 test2 = class_pkm.pkm(pokemon_10,50)
 print(f"Nom du Pokémon : {test.nom}")
