@@ -56,6 +56,7 @@ class combat():
                 prod = prod * 0
             else:
                 prod = prod * 1
+        print (prod)
         return prod
         
     def precision (self,attaque):
@@ -69,6 +70,9 @@ class combat():
     def fin_combat (self):
         True
         if self.poke1.pv <= 0 or self.poke2.pv <= 0 :
+            #le poke1 sera toujours le poke joueur
+            if self.poke2.pv <= 0 :
+                self.poke1.gain_exp(self.poke2)
             print ("Combat fini")
             self.testx = False
     
@@ -85,13 +89,16 @@ class combat():
         #cumule du stab et de l'affinité des types
         cm = self.stab(attaque, poke_att)*self.affinity(attaque, poke_def)*number
         #calcule des degats en fonction de la categorie de l'attaque, physique ou special
-        if attaque.classe == "Physique":
-            damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
-            print (damage)
-        elif attaque.classe == "Spécial":
-            damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk_spe*attaque.puissance)/poke_def.def_spe)/50)+2)*cm))
-            print (damage)
-        return damage
+        if self.precision(attaque):
+            if attaque.classe == "Physique":
+                damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
+                print (damage)
+            elif attaque.classe == "Spécial":
+                damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk_spe*attaque.puissance)/poke_def.def_spe)/50)+2)*cm))
+                print (damage)
+            return damage
+        else:
+            return 0
     
     def en_combat(self):
         self.testx = True
@@ -106,7 +113,7 @@ class combat():
             for i in range (0, len (self.poke2.attaques)):
                 print(f"attaques : {self.poke2.attaques[i]["nom"]}")
             n = int(input("joueur 2 choisi attaque "))
-            id = self.poke1.atk_id[n-1]
+            id = self.poke2.atk_id[n-1]
             atk_poke2 = class_attaque.Attaque(id)
             self.speed()
             print (self.first.nom)
@@ -114,32 +121,53 @@ class combat():
             if self.first == self.poke1:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
-                self.fin_combat ()
-                self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
-                print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
-                self.fin_combat ()
+                self.fin_combat
+                if self.testx:
+                    self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
+                    print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
+                    self.fin_combat ()
             elif self.first == self.poke2:
                 self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
                 print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
                 self.fin_combat ()
-                self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
-                print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
-                self.fin_combat ()
+                if self.testx:
+                    self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
+                    print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
+                    self.fin_combat ()
+            
+    def combat_dress(self, dress1, dress2):
+        #nombre de poke dans l'equipe
+        equipe1 = len(dress1.equipe)
+        equipe2 = len(dress2.equipe)
+        print (f"Equipe 1 : {dress1.equipe}")
+        print (f"Equipe 2 : {dress2.equipe}")
+        #indice du pkm envoyé au charbon
+        id1 = 0
+        id2 = 0
+        #boucle tant qu'une equipe n'est pas vide
+        while equipe1 != 0 or equipe2 != 0:
+            self.en_combat(dress1.equipe[id1],dress2.equipe[id2])
+            #pokemon ko changé
+            if self.poke1.pv == 0:
+                equipe1 -= 1
+                print (f"Equipe 1 : {dress1.equipe}")
+                id1 = int(input("quel pokemon voulez-vous envoyer : "))
+            elif self.poke2.pv == 0:
+                equipe2 -= 1
+                print (f"Equipe 2 : {dress2.equipe}")
+                id2 = int(input("quel pokemon voulez-vous envoyer : "))
 
 #test des methodes
 with open("pokedex.json", "r") as f:
     pokedex = json.load(f)
-pokemon_29 = pokedex.get("46")
-pokemon_10 = pokedex.get("43")
-test = class_pkm.pkm(pokemon_29, 50)
+pokemon_29 = pokedex.get("15")
+pokemon_10 = pokedex.get("3")
+test = class_pkm.pkm_dress(pokemon_29, 50)
 test2 = class_pkm.pkm(pokemon_10,50)
 print(f"Nom du Pokémon : {test.nom}")
 print(f"Type du Pokémon : {test.type}")
 print(f"pv : {test.pv}")
-''"test.evol ()"''
-print(f"Nom du Pokémon : {test.nom}")
-print(f"Type du Pokémon : {test.type}")
-print(f"pv : {test.pv}")
+print(f"lv : {test.lv}")
 print(f"Nom du Pokémon : {test2.nom}")
 print(f"Type du Pokémon : {test2.type}")
 print(f"pv : {test2.pv}")
