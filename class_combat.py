@@ -2,11 +2,11 @@ import class_pkm
 import class_attaque
 import random
 import json
+import class_dress_enemy
 class combat():
 
-    def __init__(self,poke1,poke2):
-        self.poke1 = poke1
-        self.poke2 = poke2
+    def __init__(self):
+        pass
 
     def speed (self):
         #choisi qui commence en fonction de la vitesse
@@ -71,15 +71,17 @@ class combat():
         True
         if self.poke1.pv <= 0 or self.poke2.pv <= 0 :
             #le poke1 sera toujours le poke joueur
-            if self.poke2.pv <= 0 :
-                self.poke1.gain_exp(self.poke2)
+            #if self.poke2.pv <= 0 :
+                #self.poke1.gain_exp(self.poke2)
             print ("Combat fini")
             self.testx = False
     
     def stab (self, attaque, poke):
         #si un poke utilise une attaque de sont type, les degats sont boostés
-        if attaque.type == poke.type:
-            return 1.5
+        i=0
+        for i in range(len(poke.type)):
+            if attaque.type == poke.type[i]:
+                return 1.5
         else:
             return 1
     
@@ -100,7 +102,9 @@ class combat():
         else:
             return 0
     
-    def en_combat(self):
+    def en_combat(self, poke1, poke2):
+        self.poke1 = poke1
+        self.poke2 = poke2
         self.testx = True
         #boucle qui dure tant qu'un pokemon n'est pas ko
         while self.testx:
@@ -108,11 +112,15 @@ class combat():
             for i in range (0, len (self.poke1.attaques)):
                 print(f"attaques : {self.poke1.attaques[i]["nom"]}")
             n = int(input("joueur 1 choisi attaque "))
+            while not 1<= n <= len(self.poke1.attaques):
+                n = int(input("joueur 1 choisi attaque "))
             id = self.poke1.atk_id[n-1]
             atk_poke1 = class_attaque.Attaque(id)
             for i in range (0, len (self.poke2.attaques)):
                 print(f"attaques : {self.poke2.attaques[i]["nom"]}")
             n = int(input("joueur 2 choisi attaque "))
+            while not 1<= n <= len(self.poke2.attaques):
+                n = int(input("joueur 2 choisi attaque "))
             id = self.poke2.atk_id[n-1]
             atk_poke2 = class_attaque.Attaque(id)
             self.speed()
@@ -148,28 +156,33 @@ class combat():
         while equipe1 != 0 or equipe2 != 0:
             self.en_combat(dress1.equipe[id1],dress2.equipe[id2])
             #pokemon ko changé
-            if self.poke1.pv == 0:
+            if self.poke1.pv <= 0:
                 equipe1 -= 1
-                print (f"Equipe 1 : {dress1.equipe}")
-                id1 = int(input("quel pokemon voulez-vous envoyer : "))
-            elif self.poke2.pv == 0:
+                dress1.afficher_team()
+                id1 = int(input("quel pokemon voulez-vous envoyer : ")) -1
+            elif self.poke2.pv <= 0:
                 equipe2 -= 1
                 print (f"Equipe 2 : {dress2.equipe}")
-                id2 = int(input("quel pokemon voulez-vous envoyer : "))
+                id2 = int(input("quel pokemon voulez-vous envoyer : ")) -1
 
 #test des methodes
-with open("pokedex.json", "r") as f:
+"""with open("pokedex.json", "r") as f:
     pokedex = json.load(f)
-pokemon_29 = pokedex.get("15")
-pokemon_10 = pokedex.get("3")
-test = class_pkm.pkm_dress(pokemon_29, 50)
-test2 = class_pkm.pkm(pokemon_10,50)
+pokemon_29 = pokedex.get("42")
+pokemon_10 = pokedex.get("15")
+test = class_pkm.pkm_dress(pokemon_29, 39)
+test2 = class_pkm.pkm(pokemon_10,100)
 print(f"Nom du Pokémon : {test.nom}")
 print(f"Type du Pokémon : {test.type}")
 print(f"pv : {test.pv}")
 print(f"lv : {test.lv}")
 print(f"Nom du Pokémon : {test2.nom}")
 print(f"Type du Pokémon : {test2.type}")
-print(f"pv : {test2.pv}")
-fight = combat(test,test2)
-fight.en_combat()
+print(f"pv : {test2.pv}")"""
+fight = combat()
+#fight.en_combat(test, test2)
+red = class_dress_enemy.dress_enemy("Red")
+red.ajout_team()
+ethan = class_dress_enemy.dress_enemy("Ethan")
+ethan.ajout_team()
+fight.combat_dress(red, ethan)
