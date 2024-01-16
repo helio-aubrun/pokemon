@@ -55,13 +55,15 @@ class Joueur :
     #ajout des pokemon obtenue dans le pokedex du joueur
     def ajout_pokedex (self, id) :
         import json
-        with open ("pokedex_joueur.json", "r") as pokedex_joueur:
+        with open ("pokedex_joueur.json", "r") as pokedex_joueur :
             list_pokedex_joueur = json.load (pokedex_joueur)
-        with open ("pokedex_joueur.json", "w") as pokedex_joueur, open ("pokedex.json", "r") as pokedex :
-            list_pokedex = json.load (pokedex)
-            last_key_pokedex_joueur = list(list_pokedex_joueur.keys())[-1]
-            list_pokedex_joueur [str (int (last_key_pokedex_joueur) + 1)] = list_pokedex [str (id)]
-            json.dump (list_pokedex_joueur, pokedex_joueur)
+            if (list_pokedex_joueur [str(id)]["test_pokdex"] == False) :
+                list_pokedex_joueur [str(id)]["test_pokdex"] = True
+            with open ("pokedex_joueur.json", "w") as pokedex_joueur :
+                json.dump (list_pokedex_joueur, pokedex_joueur)
+            
+
+            
 
  
     
