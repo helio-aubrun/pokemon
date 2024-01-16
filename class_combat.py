@@ -129,7 +129,7 @@ class combat():
             if self.first == self.poke1:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
-                self.fin_combat
+                self.fin_combat ()
                 if self.testx:
                     self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
                     print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
@@ -144,26 +144,28 @@ class combat():
                     self.fin_combat ()
             
     def combat_dress(self, dress1, dress2):
-        #nombre de poke dans l'equipe
+        # nombre de poke dans l'equipe
         equipe1 = len(dress1.equipe)
         equipe2 = len(dress2.equipe)
-        print (f"Equipe 1 : {dress1.equipe}")
-        print (f"Equipe 2 : {dress2.equipe}")
-        #indice du pkm envoyé au charbon
+        dress1.afficher_team()
+        dress2.afficher_team()
+        # indice du pkm envoyé au charbon
         id1 = 0
         id2 = 0
-        #boucle tant qu'une equipe n'est pas vide
-        while equipe1 != 0 or equipe2 != 0:
+        # boucle tant qu'une equipe n'est pas vide
+        while equipe1 != 0 and equipe2 != 0:
             self.en_combat(dress1.equipe[id1],dress2.equipe[id2])
-            #pokemon ko changé
+            # pokemon ko changé
             if self.poke1.pv <= 0:
                 equipe1 -= 1
-                dress1.afficher_team()
-                id1 = int(input("quel pokemon voulez-vous envoyer : ")) -1
+                if equipe1 != 0:
+                    dress1.afficher_team()
+                    id1 = int(input("quel pokemon voulez-vous envoyer : ")) -1
             elif self.poke2.pv <= 0:
                 equipe2 -= 1
-                print (f"Equipe 2 : {dress2.equipe}")
-                id2 = int(input("quel pokemon voulez-vous envoyer : ")) -1
+                if equipe2 != 0:
+                    dress2.afficher_team()
+                    id2 = int(input("quel pokemon voulez-vous envoyer : ")) -1
 
 #test des methodes
 """with open("pokedex.json", "r") as f:
