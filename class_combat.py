@@ -3,6 +3,8 @@ import class_attaque
 import random
 import json
 import class_dress_enemy
+import ia
+
 class combat():
 
     def __init__(self):
@@ -102,13 +104,13 @@ class combat():
         else:
             return 0
     
-    def en_combat(self, poke1, poke2):
+    def en_combat(self, poke1, poke2, ia_attack_index=None):
         self.poke1 = poke1
         self.poke2 = poke2
         self.testx = True
-        #boucle qui dure tant qu'un pokemon n'est pas ko
+        # boucle qui dure tant qu'un pokemon n'est pas ko
         while self.testx:
-            #parcours les attaques, stocke l'indice entrer par le joueur dans n puis stocke creer un objet de la class attaque avec l'id dans atk_poke
+            # parcours les attaques, stocke l'indice entrer par le joueur dans n puis stocke creer un objet de la class attaque avec l'id dans atk_poke
             for i in range (0, len (self.poke1.attaques)):
                 print(f"attaques : {self.poke1.attaques[i]["nom"]}")
             n = int(input("joueur 1 choisi attaque "))
@@ -116,16 +118,21 @@ class combat():
                 n = int(input("joueur 1 choisi attaque "))
             id = self.poke1.atk_id[n-1]
             atk_poke1 = class_attaque.Attaque(id)
-            for i in range (0, len (self.poke2.attaques)):
-                print(f"attaques : {self.poke2.attaques[i]["nom"]}")
-            n = int(input("joueur 2 choisi attaque "))
-            while not 1<= n <= len(self.poke2.attaques):
+            # Si l'IA est le joueur 2, utilisez l'attaque choisie par l'IA
+            if ia_attack_index is not None:
+                id = self.poke2.atk_id[ia_attack_index]
+                atk_poke2 = class_attaque.Attaque(id)
+            else:
+                for i in range (0, len (self.poke2.attaques)):
+                    print(f"attaques : {self.poke2.attaques[i]["nom"]}")
                 n = int(input("joueur 2 choisi attaque "))
-            id = self.poke2.atk_id[n-1]
-            atk_poke2 = class_attaque.Attaque(id)
+                while not 1<= n <= len(self.poke2.attaques):
+                    n = int(input("joueur 2 choisi attaque "))
+                id = self.poke2.atk_id[n-1]
+                atk_poke2 = class_attaque.Attaque(id)
             self.speed()
             print (self.first.nom)
-            #en fonction de qui attaque en premier, appele la methode loose_pv de la class pkm avec la methode calcul_damage et verifie si le combat est fini
+            # en fonction de qui attaque en premier, appele la methode loose_pv de la class pkm avec la methode calcul_damage et verifie si le combat est fini
             if self.first == self.poke1:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
                 print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
@@ -154,7 +161,19 @@ class combat():
         id2 = 0
         # boucle tant qu'une equipe n'est pas vide
         while equipe1 != 0 and equipe2 != 0:
-            self.en_combat(dress1.equipe[id1],dress2.equipe[id2])
+            ia_player = ia.IAPlayer()
+
+       # Get the available attacks for the IA player
+            ia_attacks = dress2.equipe[id2].attaques
+
+       # Have the IA player choose an attack
+            ia_chosen_attack = ia_player.choose_attack(ia_attacks)
+
+       # Find the index of the chosen attack
+            ia_attack_index = ia_attacks.index(ia_chosen_attack)
+
+       # Call the en_combat method with the chosen attack
+            self.en_combat(dress1.equipe[id1], dress2.equipe[id2], ia_attack_index + 1)
             # pokemon ko changé
             if self.poke1.pv <= 0:
                 equipe1 -= 1
@@ -164,8 +183,7 @@ class combat():
             elif self.poke2.pv <= 0:
                 equipe2 -= 1
                 if equipe2 != 0:
-                    dress2.afficher_team()
-                    id2 = int(input("quel pokemon voulez-vous envoyer : ")) -1
+                    id2 += 1
 
 #test des methodes
 """with open("pokedex.json", "r") as f:
@@ -180,11 +198,11 @@ print(f"pv : {test.pv}")
 print(f"lv : {test.lv}")
 print(f"Nom du Pokémon : {test2.nom}")
 print(f"Type du Pokémon : {test2.type}")
-print(f"pv : {test2.pv}")"""
+print(f"pv : {test2.pv}")
 fight = combat()
 #fight.en_combat(test, test2)
 red = class_dress_enemy.dress_enemy("Red")
 red.ajout_team()
 ethan = class_dress_enemy.dress_enemy("Ethan")
 ethan.ajout_team()
-fight.combat_dress(red, ethan)
+fight.combat_dress(red, ethan)"""
