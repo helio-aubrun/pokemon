@@ -31,7 +31,7 @@
     "30":{"id":30,"nom":"ronflex", "Type":["Normal"], "talent":"isograisse","pv":160, "atk":110, "def":65, "atk_spe":65, "def_spe":110, "spe":30, "exp":154, "evo":101, "attaques":["92","14","147","15"]},
     "31":{"id":31,"nom":"parecool", "Type":["Normal"], "talent":"absenteisme","pv":60, "atk":60, "def":60, "atk_spe":35, "def_spe":35, "spe":30, "exp":83, "evo":18, "attaques":["97","90"]},
     "32":{"id":32,"nom":"vigoroth", "Type":["Normal"], "talent":"esprit vital","pv":80, "atk":80, "def":80, "atk_spe":55, "def_spe":55, "spe":90, "exp":126, "evo":36, "attaques":["72","70","69"]},
-    "33":{"id":33,"nom":"monaflemit", "Type":["Normal"], "talent":"absenteisme","pv":150, "atk":160, "def":100, "atk_spe":95, "def_spe":65, "spe":100, "exp":210, "evo":101, "attaques":["14","178","690","186"]},
+    "33":{"id":33,"nom":"monaflemit", "Type":["Normal"], "talent":"absenteisme","pv":150, "atk":160, "def":100, "atk_spe":95, "def_spe":65, "spe":100, "exp":210, "evo":101, "attaques":["14","178","69","186"]},
     "34":{"id":34,"nom":"ponchiot", "Type":["Normal"], "talent":"esprit vital","pv":45, "atk":60, "def":45, "atk_spe":25, "def_spe":45, "spe":55, "exp":55, "evo":16, "attaques":["31","119"]},
     "35":{"id":35,"nom":"ponchien", "Type":["Normal"], "talent":"intimidation","pv":65, "atk":80, "def":65, "atk_spe":35, "def_spe":65, "spe":60, "exp":130, "evo":32, "attaques":["72","70","69"]},
     "36":{"id":36,"nom":"mastouffe", "Type":["Normal"], "talent":"intimidation","pv":85, "atk":110, "def":90, "atk_spe":45, "def_spe":90, "spe":80, "exp":221, "evo":101, "attaques":["187","182","43","10"]},

@@ -198,11 +198,11 @@ print(f"pv : {test.pv}")
 print(f"lv : {test.lv}")
 print(f"Nom du Pokémon : {test2.nom}")
 print(f"Type du Pokémon : {test2.type}")
-print(f"pv : {test2.pv}")
+print(f"pv : {test2.pv}")"""
 fight = combat()
 #fight.en_combat(test, test2)
 red = class_dress_enemy.dress_enemy("Red")
 red.ajout_team()
 ethan = class_dress_enemy.dress_enemy("Ethan")
 ethan.ajout_team()
-fight.combat_dress(red, ethan)"""
+fight.combat_dress(red, ethan)

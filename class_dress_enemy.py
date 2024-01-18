@@ -27,9 +27,10 @@ class dress_enemy():
         team = []
         while len(team) < 6:
             id_pokemon = random.randint(1, 51)
+            id_pokemon = str(id_pokemon)
             with open("pokedex.json", "r") as f:
                 pokedex = json.load(f)
-            new_poke = class_pkm.pkm_adv(pokedex.get(id_pokemon),50)
+            new_poke = class_pkm.pkm(pokedex.get(id_pokemon),50)
             team.append(new_poke)
         self.equipe = team
         self.afficher_team()
@@ -41,7 +42,9 @@ class dress_enemy():
         self.equipe.append(new_poke)
         self.afficher_team()
 
-red = dress_enemy("Red")
+"""red = dress_enemy("Red")
 red.ajout_team_game("50")
 red.ajout_team_game("51")
 red.ajout_team_game("15")
+adv = dress_enemy ("adv")
+adv.random_team()"""
