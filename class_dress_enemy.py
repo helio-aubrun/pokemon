@@ -41,10 +41,3 @@ class dress_enemy():
         new_poke = class_pkm.pkm_adv(pokedex.get(id),50)
         self.equipe.append(new_poke)
         self.afficher_team()
-
-"""red = dress_enemy("Red")
-red.ajout_team_game("50")
-red.ajout_team_game("51")
-red.ajout_team_game("15")
-adv = dress_enemy ("adv")
-adv.random_team()"""

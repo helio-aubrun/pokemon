@@ -1,6 +1,5 @@
 import pygame
 from pygame import mixer
-import os
 import sys
 import class_dress_enemy
 
@@ -26,7 +25,7 @@ class jeux():
 
     def main(self):
         #reglage son
-        self.sound=0.0
+        self.sound=0.2
         mixer.music.set_volume(self.sound)
         mixer.music.play(-1)
         #1er ecran
@@ -37,6 +36,8 @@ class jeux():
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
                         button_sound.play()
+                        mixer.music.load("ost/prof.mp3")
+                        mixer.music.play(-1)
                         self.in_game = False
             self.screen.blit(bg,(0,0))
             pygame.display.flip()
@@ -58,6 +59,16 @@ class jeux():
                     #entrer un caractere
                     else:
                         self.input_text += event.unicode
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+                    #bouton pokedex et play
+                    x,y = event.pos
+                    if 703 <= x <= 796 and 18 <= y <= 94:
+                        print ("Pokedex")
+                    elif 326 <= x <= 471 and 402 <= y <= 448:
+                        print ("Play")
+                        mixer.music.load("ost/dress.mp3")
+                        mixer.music.play(-1)
+            #affichage de tout les elements
             self.screen.blit(bg_choice,(0,0))
             pygame.draw.rect(self.screen, (255, 255, 255), pygame.Rect(300, 250, 200, 50), 2)
             font = pygame.font.Font(None, 36)
