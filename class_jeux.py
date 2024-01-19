@@ -2,6 +2,7 @@ import pygame
 from pygame import mixer
 import sys
 import class_dress_enemy
+import affiche_pokedex
 
 mixer.init()
 mixer.music.load("ost/title.mp3")
@@ -22,6 +23,7 @@ class jeux():
         self.equipe = []
         self.img_pokedex = pygame.image.load("image/pokedex.png")
         self.img_pokedex = pygame.transform.scale(self.img_pokedex,(100,100))
+        self.pokedex = affiche_pokedex.affiche_pokedex()
 
     def main(self):
         #reglage son
@@ -63,7 +65,7 @@ class jeux():
                     #bouton pokedex et play
                     x,y = event.pos
                     if 703 <= x <= 796 and 18 <= y <= 94:
-                        print ("Pokedex")
+                        self.pokedex.run()
                     elif 326 <= x <= 471 and 402 <= y <= 448:
                         print ("Play")
                         mixer.music.load("ost/dress.mp3")
