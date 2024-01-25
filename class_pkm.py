@@ -23,6 +23,7 @@ class pkm():
         for i in range(len(id.get("attaques"))):
             self.attaques.append(class_attaque.Attaque(id.get("attaques")[i]).attaque)
         self.sauvage = True
+        self.hp_max = floor(abs(((2*id.get("pv")+31)*lv)/100)+lv+10)
 
     def levelup(self):
         self.lv+=1
