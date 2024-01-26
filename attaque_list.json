@@ -2,11 +2,11 @@
     "1": {
         "nom": "Acide Malique",
         "type": "Plante",
-        "discription": "Le lanceur projette un liquide corrosif créé à partir d’une pomme acide sur la cible, ce qui baisse la Défense Spéciale de celle-ci.",
+        "discription": "Le lanceur projette un liquide corrosif créé à partir d’une pomme acide sur la cible, ce qui baisse la Défense Spécial de celle-ci.",
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "2": {
         "nom": "Aire d’Eau",
@@ -15,7 +15,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "3": {
         "nom": "Aire d’Herbe",
@@ -24,7 +24,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "4": {
         "nom": "Aire de Feu",
@@ -33,7 +33,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "5": {
         "nom": "Aqua-Brèche",
@@ -69,7 +69,7 @@
         "puissance": 90,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "9": {
         "nom": "Ball’Météo",
@@ -78,16 +78,16 @@
         "puissance": 50,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "10": {
         "nom": "Ball’Ombre",
         "type": "Spectre",
-        "discription": "Le lanceur projette une grande ombre sur la cible qui peut aussi faire baisser la Défense Spéciale de celle-ci.",
+        "discription": "Le lanceur projette une grande ombre sur la cible qui peut aussi faire baisser la Défense Spécial de celle-ci.",
         "puissance": 80,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "11": {
         "nom": "Balle Graine",
@@ -114,7 +114,7 @@
         "puissance": 140,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "14": {
         "nom": "Bélier",
@@ -141,7 +141,7 @@
         "puissance": 60,
         "precision": 85,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "17": {
         "nom": "Botte Sucrette",
@@ -168,7 +168,7 @@
         "puissance": 90,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "20": {
         "nom": "Bulles d’O",
@@ -177,7 +177,7 @@
         "puissance": 65,
         "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "21": {
         "nom": "Cadeau",
@@ -195,7 +195,7 @@
         "puissance": 60,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "23": {
         "nom": "Canicule",
@@ -204,16 +204,16 @@
         "puissance": 95,
         "precision": 90,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "24": {
         "nom": "Canon Blindé",
         "type": "Feu",
-        "discription": "Le lanceur tire un boulet de canon ardent provenant de sa propre armure sur la cible. Cela baisse la Défense et la Défense Spéciale du lanceur.",
+        "discription": "Le lanceur tire un boulet de canon ardent provenant de sa propre armure sur la cible. Cela baisse la Défense et la Défense Spécial du lanceur.",
         "puissance": 120,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "25": {
         "nom": "Canon Graine",
@@ -240,7 +240,7 @@
         "puissance": 50,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "28": {
         "nom": "Chant Antique",
@@ -249,7 +249,7 @@
         "puissance": 75,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "29": {
         "nom": "Chant Canon",
@@ -258,16 +258,16 @@
         "puissance": 60,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "30": {
         "nom": "Chant Flamboyant",
         "type": "Feu",
-        "discription": "Le lanceur carbonise la cible en projetant sur elle de vives flammes créées par un chant. Cette capacité augmente l’Attaque Spéciale du lanceur.",
+        "discription": "Le lanceur carbonise la cible en projetant sur elle de vives flammes créées par un chant. Cette capacité augmente l’Attaque Spécial du lanceur.",
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "31": {
         "nom": "Charge",
@@ -285,7 +285,7 @@
         "puissance": 65,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "33": {
         "nom": "Cœur de Rancœur",
@@ -294,7 +294,7 @@
         "puissance": 75,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "34": {
         "nom": "Combo-Griffe",
@@ -321,7 +321,7 @@
         "puissance": 60,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "37": {
         "nom": "Coup d’Boule",
@@ -344,7 +344,7 @@
     "39": {
         "nom": "Coup Victoire",
         "type": "Feu",
-        "discription": "Le lanceur fait jaillir des flammes ardentes de son front et se jette sur la cible, ce qui baisse la Défense, la Défense Spéciale et la Vitesse du lanceur.",
+        "discription": "Le lanceur fait jaillir des flammes ardentes de son front et se jette sur la cible, ce qui baisse la Défense, la Défense Spécial et la Vitesse du lanceur.",
         "puissance": 180,
         "precision": 95,
         "pp": 5,
@@ -407,11 +407,11 @@
     "46": {
         "nom": "Danse du Feu",
         "type": "Feu",
-        "discription": "Le lanceur s’enveloppe de flammes et attaque la cible, Cela peut aussi augmenter l’Attaque Spéciale du lanceur.",
+        "discription": "Le lanceur s’enveloppe de flammes et attaque la cible, Cela peut aussi augmenter l’Attaque Spécial du lanceur.",
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "47": {
         "nom": "Danse Éveil",
@@ -420,7 +420,7 @@
         "puissance": 90,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "48": {
         "nom": "Danse Flammes",
@@ -429,7 +429,7 @@
         "puissance": 35,
         "precision": 85,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "49": {
         "nom": "Danse Fleurs",
@@ -438,7 +438,7 @@
         "puissance": 120,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "50": {
         "nom": "Déflagration",
@@ -447,7 +447,7 @@
         "puissance": 110,
         "precision": 85,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "51": {
         "nom": "Dernier Recours",
@@ -483,7 +483,7 @@
         "puissance": 50,
         "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "55": {
         "nom": "Eau Revoir",
@@ -501,7 +501,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "57": {
         "nom": "Ébullition",
@@ -510,7 +510,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "58": {
         "nom": "Écho",
@@ -519,7 +519,7 @@
         "puissance": 40,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "59": {
         "nom": "Éclat Spectral",
@@ -528,7 +528,7 @@
         "puissance": 120,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "60": {
         "nom": "Éclate Griffe",
@@ -542,11 +542,11 @@
     "61": {
         "nom": "Éco-Sphère",
         "type": "Plante",
-        "discription": "Le lanceur utilise les pouvoirs de la nature pour attaquer la cible, ce qui peut aussi baisser la Défense Spéciale de celle-ci.",
+        "discription": "Le lanceur utilise les pouvoirs de la nature pour attaquer la cible, ce qui peut aussi baisser la Défense Spécial de celle-ci.",
         "puissance": 90,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "62": {
         "nom": "Écras’Face",
@@ -600,7 +600,7 @@
         "puissance": 150,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "68": {
         "nom": "Esprit Frappeur",
@@ -663,16 +663,16 @@
         "puissance": 100,
         "precision": 50,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "75": {
         "nom": "Feu Ensorcelé",
         "type": "Feu",
-        "discription": "Le lanceur attaque en soufflant des flammes brûlantes par la bouche et diminue l’Attaque Spéciale de la cible.",
+        "discription": "Le lanceur attaque en soufflant des flammes brûlantes par la bouche et diminue l’Attaque Spécial de la cible.",
         "puissance": 75,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "76": {
         "nom": "Feu Envieux",
@@ -681,7 +681,7 @@
         "puissance": 70,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "77": {
         "nom": "Feu Sacré",
@@ -706,9 +706,9 @@
         "type": "Plante",
         "discription": "Le lanceur disperse d’étranges feuilles qui poursuivent la cible. N’échoue jamais.",
         "puissance": 60,
-        "precision": "-",
+        "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "80": {
         "nom": "Flamme Bleue",
@@ -717,7 +717,7 @@
         "puissance": 130,
         "precision": 85,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "81": {
         "nom": "Flamme Croix",
@@ -726,7 +726,7 @@
         "puissance": 100,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "82": {
         "nom": "Flamme Ultime",
@@ -735,7 +735,7 @@
         "puissance": 130,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "83": {
         "nom": "Flammèche",
@@ -744,7 +744,7 @@
         "puissance": 40,
         "precision": 100,
         "pp": 25,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "84": {
         "nom": "Force",
@@ -794,11 +794,11 @@
     "89": {
         "nom": "Fulmigraine",
         "type": "Plante",
-        "discription": "Le corps du lanceur émet une onde de choc. Peut aussi beaucoup baisser la Défense Spéciale de la cible.",
+        "discription": "Le corps du lanceur émet une onde de choc. Peut aussi beaucoup baisser la Défense Spécial de la cible.",
         "puissance": 120,
         "precision": 85,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "90": {
         "nom": "Furie",
@@ -816,7 +816,7 @@
         "puissance": 150,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "92": {
         "nom": "Giga Impact",
@@ -834,7 +834,7 @@
         "puissance": 75,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "94": {
         "nom": "Gigotage",
@@ -906,7 +906,7 @@
         "puissance": 150,
         "precision": 95,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "102": {
         "nom": "Hommage Posthume",
@@ -933,7 +933,7 @@
         "puissance": 150,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "105": {
         "nom": "Hydrocanon",
@@ -942,7 +942,7 @@
         "puissance": 110,
         "precision": 80,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "106": {
         "nom": "Hydrovapeur",
@@ -951,7 +951,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "107": {
         "nom": "Hyperceuse",
@@ -996,7 +996,7 @@
         "puissance": 110,
         "precision": 95,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "112": {
         "nom": "Jugement",
@@ -1005,7 +1005,7 @@
         "puissance": 100,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "113": {
         "nom": "Koud’Korne",
@@ -1050,7 +1050,7 @@
         "puissance": 90,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "118": {
         "nom": "Lance-Soleil",
@@ -1059,7 +1059,7 @@
         "puissance": 120,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "119": {
         "nom": "Léchouille",
@@ -1086,14 +1086,14 @@
         "puissance": 140,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "122": {
         "nom": "Lutte",
         "type": "Normal",
         "discription": "Une attaque désespérée, utilisée quand le lanceur n’a plus de PP. Le blesse aussi légèrement.",
         "puissance": 50,
-        "precision": "-",
+        "precision": 100,
         "pp": 1,
         "classe": "Physique"
     },
@@ -1102,7 +1102,7 @@
         "type": "Plante",
         "discription": "Le lanceur attaque en jetant un bouquet de fleurs piégé sur la cible. N’échoue jamais et inflige toujours un coup critique.",
         "puissance": 70,
-        "precision": "-",
+        "precision": 100,
         "pp": 10,
         "classe": "Physique"
     },
@@ -1140,7 +1140,7 @@
         "puissance": 40,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "128": {
         "nom": "Mégafouet",
@@ -1158,16 +1158,16 @@
         "puissance": 90,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "130": {
         "nom": "Météores",
         "type": "Normal",
         "discription": "Le lanceur envoie des rayons d’étoiles qui touchent toujours la cible.",
         "puissance": 60,
-        "precision": "-",
+        "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "131": {
         "nom": "Mortier Matcha",
@@ -1176,7 +1176,7 @@
         "puissance": 80,
         "precision": 90,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "132": {
         "nom": "Nitrocharge",
@@ -1194,7 +1194,7 @@
         "puissance": 1,
         "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "134": {
         "nom": "Ocroupi",
@@ -1203,7 +1203,7 @@
         "puissance": 90,
         "precision": 85,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "135": {
         "nom": "Ombre Nocturne",
@@ -1212,7 +1212,7 @@
         "puissance": 1,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "136": {
         "nom": "Ombre Portée",
@@ -1230,7 +1230,7 @@
         "puissance": 110,
         "precision": 85,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "138": {
         "nom": "Pied Brûleur",
@@ -1257,7 +1257,7 @@
         "puissance": 40,
         "precision": 100,
         "pp": 25,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "141": {
         "nom": "Plaquage",
@@ -1284,7 +1284,7 @@
         "puissance": 120,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "144": {
         "nom": "Plumo-Queue",
@@ -1318,7 +1318,7 @@
         "type": "Spectre",
         "discription": "Le lanceur se fond dans les ombres pour porter un coup de poing. N’échoue jamais.",
         "puissance": 60,
-        "precision": "-",
+        "precision": 100,
         "pp": 20,
         "classe": "Physique"
     },
@@ -1356,7 +1356,7 @@
         "puissance": 150,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "152": {
         "nom": "Rayon Spectral",
@@ -1365,7 +1365,7 @@
         "puissance": 100,
         "precision": 100,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "153": {
         "nom": "Relâche",
@@ -1374,7 +1374,7 @@
         "puissance": 1,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "154": {
         "nom": "Retenue",
@@ -1401,7 +1401,7 @@
         "puissance": 50,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "157": {
         "nom": "Roue de Feu",
@@ -1428,7 +1428,7 @@
         "puissance": 65,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "160": {
         "nom": "Sheauriken",
@@ -1437,7 +1437,7 @@
         "puissance": 15,
         "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "161": {
         "nom": "Siphon",
@@ -1446,7 +1446,7 @@
         "puissance": 35,
         "precision": 85,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "162": {
         "nom": "Souplesse",
@@ -1460,11 +1460,11 @@
     "163": {
         "nom": "Surchauffe",
         "type": "Feu",
-        "discription": "Le lanceur attaque la cible à pleine puissance, mais le contrecoup baisse beaucoup l’Attaque Spéciale du lanceur.",
+        "discription": "Le lanceur attaque la cible à pleine puissance, mais le contrecoup baisse beaucoup l’Attaque Spécial du lanceur.",
         "puissance": 130,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "164": {
         "nom": "Surf",
@@ -1473,7 +1473,7 @@
         "puissance": 90,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "165": {
         "nom": "Tacle Feu",
@@ -1523,20 +1523,20 @@
     "170": {
         "nom": "Tempête Verte",
         "type": "Plante",
-        "discription": "Invoque une tempête de feuilles acérées. Le contrecoup réduit beaucoup l’Attaque Spéciale du lanceur.",
+        "discription": "Invoque une tempête de feuilles acérées. Le contrecoup réduit beaucoup l’Attaque Spécial du lanceur.",
         "puissance": 130,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "171": {
         "nom": "Téra Explosion",
         "type": "Normal",
-        "discription": "Si le lanceur est téracristallisé, il libère l’énergie de son type Téracristal. La capacité utilise l’Attaque ou l’Attaque Spéciale, selon ce qui infligera le plus de dégâts.",
+        "discription": "Si le lanceur est téracristallisé, il libère l’énergie de son type Téracristal. La capacité utilise l’Attaque ou l’Attaque Spécial, selon ce qui infligera le plus de dégâts.",
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "172": {
         "nom": "Tir de Précision",
@@ -1545,7 +1545,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 15,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "173": {
         "nom": "Tisse Ombre",
@@ -1608,7 +1608,7 @@
         "puissance": 80,
         "precision": 100,
         "pp": 10,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "180": {
         "nom": "Triple Plongeon",
@@ -1644,7 +1644,7 @@
         "puissance": 150,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "184": {
         "nom": "Végé-Attaque",
@@ -1653,7 +1653,7 @@
         "puissance": 150,
         "precision": 90,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "185": {
         "nom": "Vengeance",
@@ -1671,7 +1671,7 @@
         "puissance": 60,
         "precision": 100,
         "pp": 20,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "187": {
         "nom": "Vitesse Extrême",
@@ -1698,7 +1698,7 @@
         "puissance": 20,
         "precision": 100,
         "pp": 25,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     },
     "190": {
         "nom": "Vortex Magma",
@@ -1707,6 +1707,6 @@
         "puissance": 100,
         "precision": 75,
         "pp": 5,
-        "classe": "Spéciale"
+        "classe": "Spécial"
     }
 }
