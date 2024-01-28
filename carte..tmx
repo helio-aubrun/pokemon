@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" source="tileset.pokemon.tsx"/>
+ <tileset firstgid="4257" source="RPG Nature Tileset.tsx"/>
+ <tileset firstgid="4977" source="tileset arides.tsx"/>
+ <layer id="1" name="background" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2kEKgCAQhWE9QotWHaVdt+n+F6hN4CadknLm8QcfBY7Qcww35ZRSPu1TnaUG/VTWWSWHCvrhB70A9PGd+0I/AABvRD0/ts75y2w3Omstw/rA6PcFAHwn6nmu6u9+tK4oOVT6QQ5yRKKSA76o7Cty+JKN//p4p5BBKUsrgzVjWXc9l/e7/VuO1eos8w426Ymc
+  </data>
+ </layer>
+ <layer id="2" name="house" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2ldv01AYxvETkrYKSQthii06EVtsOiEdKV1hI3bZvQKugCvgW8AVcMEXYIvRwWjKRmyxPwE3LUViBPibpKrlnKRxY6su+JV+snNybL9PfRLnogGfEAFUD/KtYrCXncNaZeewVtk5rFV2DmvV/5pjqVeIQhShGCUoRZk3du45lxDncQEXcQmXccUVOzfbI0QOcpGHfBRgmsecHMvp149yVKASVQhIclyl32u4jhtoRgtaJTmm0+8MzMQszMYczDUpxwr6rUEt6lCPBgQlOW7S7y3cxh20I4QOSY559DsfC7AQi7AYS0zKsYp+V2MN1mId1mODJMc9+r2PB3iIR3iMJ5IchfRbhGKUoBRlWGZSjo30uwmbsQVbsQ3bJTme0u8zPMcLvMQrvJbk8NNvOSpQiSoEUG1Sjh30uxO7sBt7sBf7JDne0O9bvMN7fMBHfJLkqKHfWtShHg0IYqVJOfpT3XH2jSw7R/Jl50i+zMzxzSnEd/zAT4TxC7+dxl9LT46wEI16OPheGgInXEhDOjJcf8+VEr+mZ705kpsZKTf9DoUHXmQiC8NwgvdPiuS2pzVka9PMHD76HYGRGIXRGIOxrkg/Z0RyWzNytLK223BqeN/rbBz9jscETMQkTMaUJNeV0m+LN3ItNWWsVfPc1Zujgwx3VTkSzZ9Kv9nIQS7ykI8CyfNcVu30GkKjuzeDsq+MdaSYo+ecylabYz9jB3DQ3Tv2GV2qOV3RMW3Jjm32Rv72Taocyr4R96PnnE2SHIcYO4wjmhwBh+p6DnkO2bEDdT+OMnYMxzU5gqocwTg5ZMdGrxlzP8KS4428H7JSeu5Uve4U8hwJrhnzOTcih+Z8fT4LZetK7/PU6BxKTz3fg8q2KzPiC7rxFZ1R6nHtupIdox5Tv9a+p8w3IkcomkPZOrL43QEnXEhDOjI0+9qKd4z6fInObfS66k+Osz5r5JDd53hjeubGGzNjXaX6G9VIqeSwctk5rFV2DmuVncNaZeewVtk5rFX/Wo6B/h8wI7Z/AF0kwe8=
+  </data>
+ </layer>
+ <layer id="3" name="water" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer id="4" name="walls" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer id="5" name="bridge" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer id="6" name="plantes" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+</map>
