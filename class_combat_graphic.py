@@ -9,6 +9,7 @@ import random
 import json
 import class_dress_enemy
 import ia
+import chois_pkm_joueur
 from math import floor
 
 class Screen:
@@ -32,8 +33,17 @@ class Screen:
             self.joueur.ajout_team_game(str (list_pkm_joueur [pkm]["id"]))
         self.pkm_joueur = self.joueur.equipe [0]
 
-    #ecran du chois du pokemon suivant
-        
+    #update des pokemon jpoueur
+    def update_pkm_jouer (self) :
+        with open('list_pkm_joueur.json', 'r', encoding='utf-8') as f:
+            list_pkm_joueur = json.load(f)
+        test_id = 1
+        while not (self.pkm_joueur.id == list_pkm_joueur [str (test_id)] ["id"]) :
+            test_id += 1
+        list_pkm_joueur [str (test_id)] ["pv"] = self.pkm_joueur.pv
+        with open('list_pkm_joueur.json', 'w', encoding='utf-8') as f:
+            json.dump (list_pkm_joueur, f)
+            
 
     #creation et affichage des plateforme
     def plateforme (self) :
@@ -53,7 +63,7 @@ class Screen:
     #creation random des pokemon enemy
     def crea_list_adv (self) :
         self.adv = class_dress_enemy.dress_enemy ("adversaire")
-        self.adv.random_team ()
+        self.adv.random_team (4)
         self.pkm_adv = self.adv.equipe [0]
 
     #changement de pokemon ko de l'adversaire
@@ -61,7 +71,7 @@ class Screen:
         temp = []
         for i in range (1, len (self.adv.equipe)) :
             temp.append (self.adv.equipe [i])
-        print (temp)
+        #print (temp)
         self.adv.equipe = temp
         self.pkm_adv = self.adv.equipe [0]
             
@@ -167,6 +177,7 @@ class Screen:
         #nom
         text = font.render(self.pkm_joueur.nom, True, (51, 51, 51))
         self.screen.blit(text, (520, 365))
+
         #lvl
         text = font.render(str (self.pkm_joueur.lv), True, (51, 51, 51))
         self.screen.blit(text, (680, 365))
@@ -184,6 +195,40 @@ class Screen:
         text = font.render(str (self.pkm_adv.lv), True, (51, 51, 51))
         self.screen.blit(text, (175, 64))
 
+    #test fin combat
+    def test_fin_combat (self, test = 0 ) :
+        if test == 1 :
+            self.fin_combat ()
+
+        else :
+            with open('list_pkm_joueur.json', 'r', encoding='utf-8') as f:
+                    list_pkm_joueur = json.load(f)
+            test_equipe_ko = True
+            for pkm in list_pkm_joueur :
+                if list_pkm_joueur [pkm] ["pv"] > 0 :
+                    test_equipe_ko = False
+
+                    return test_equipe_ko
+            
+            if test_equipe_ko :
+
+                running = True
+
+                while running:
+                    for event in pygame.event.get():
+                        if event.type == pygame.QUIT:
+                            running = False
+                    
+                    self.screen.blit (self.back, (0, 0))
+                    font = pygame.font.Font(None, 50)
+                    text = font.render("Fin du jeux, Vous avez perdue", True, (255, 0, 0))
+                    text_rect = text.get_rect(center=(400, 300))
+                    self.screen.blit(text, text_rect)
+                    pygame.display.update()
+
+                pygame.quit()
+
+
     #fin du combat
     def fin_combat (self):
 
@@ -196,7 +241,7 @@ class Screen:
             
             self.screen.blit (self.back, (0, 0))
             font = pygame.font.Font(None, 50)
-            text = font.render("Fin du jeu", True, (255, 0, 0))
+            text = font.render("Fin du jeux, Vous avez gagner", True, (255, 0, 0))
             text_rect = text.get_rect(center=(400, 300))
             self.screen.blit(text, text_rect)
             pygame.display.update()
@@ -225,18 +270,23 @@ class Screen:
                     # Check if the mouse click was within the rectangle
                     for i in range (len (self.bt)) :
                         if self.bt [i].collidepoint(mouse_pos):
-                            print("Rectangle clicked! " + str (i))
+                            #print("Rectangle clicked! " + str (i))
                             combat_pkm.choose_attack (self.pkm_joueur, self.pkm_adv, int (i))
                             if self.pkm_adv.pv <= 0:
                                     if len (self.adv.equipe) == 1 :
-                                        self.fin_combat ()
+                                        self.test_fin_combat (test = 1)
                                         running = False
                                         break
                                     
                                     #changement de pokemon ko
                                     self.switch_adv ()
                             if self.pkm_joueur.pv <= 0:
-                                self.chois_pkm_joueur ()
+                                self.update_pkm_jouer ()
+                                if not (self.test_fin_combat()) :
+                                    ecran_chois = chois_pkm_joueur.changement ()
+                                    self.pkm_joueur = self.joueur.equipe [ecran_chois.retourne ()]
+                                    print ()
+
 
         
                             

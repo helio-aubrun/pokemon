@@ -74,7 +74,7 @@ class combat():
             #le poke1 sera toujours le poke joueur
             #if self.poke2.pv <= 0 :
                 #self.poke1.gain_exp(self.poke2)
-            print ("Combat fini")
+            #print ("Combat fini")
             False
     
     def stab (self, attaque, poke):
@@ -95,10 +95,10 @@ class combat():
         if self.precision(attaque):
             if attaque.classe == "Physique":
                 damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
-                print (damage)
+                #print (damage)
             elif attaque.classe == "Spécial":
                 damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk_spe*attaque.puissance)/poke_def.def_spe)/50)+2)*cm))
-                print (damage)
+                #print (damage)
             return damage
         else:
             return 0
@@ -116,24 +116,29 @@ class combat():
             
     def dammage(self,atk_poke1, atk_poke2):
         self.speed()
-        print (self.first.nom)
+        #print (self.first.nom)
         # en fonction de qui attaque en premier, appele la methode loose_pv de la class pkm avec la methode calcul_damage et verifie si le combat est fini
         if self.first == self.poke1:
             self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
-            print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
+            #print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
             self.fin_combat ()
             if self.testx:
                 self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
-                print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
+                #print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
                 self.fin_combat ()
         elif self.first == self.poke2:
             self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
-            print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
+            #print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
             self.fin_combat ()
             if self.testx:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
-                print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
+                #print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
                 self.fin_combat ()
+
+    #calcule des degat et aplication pour le combat graphic
+    def damage_graph (self, pkm_off, pkm_def) :
+
+        return 
             
     def combat_dress(self, dress1, dress2):
         nb_ko1 = 0
