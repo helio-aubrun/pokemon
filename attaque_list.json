@@ -291,7 +291,7 @@
         "nom": "Cœur de Rancœur",
         "type": "Spectre",
         "discription": "Une rancœur glaciale frappe la cible et baisse son Attaque.",
-        "puissance": 100,
+        "puissance": 75,
         "precision": 100,
         "pp": 10,
         "classe": "Spécial"
@@ -814,7 +814,7 @@
         "type": "Eau",
         "discription": "Le lanceur attaque avec un jet d’eau. Moins il a de PV et moins l’attaque est puissante.",
         "puissance": 150,
-        "precision": 75,
+        "precision": 100,
         "pp": 5,
         "classe": "Spécial"
     },
@@ -823,7 +823,7 @@
         "type": "Normal",
         "discription": "Le lanceur charge la cible de toute ses forces et doit ensuite se reposer au tour suivant.",
         "puissance": 150,
-        "precision": 75,
+        "precision": 90,
         "pp": 5,
         "classe": "Physique"
     },
@@ -1093,7 +1093,7 @@
         "type": "Normal",
         "discription": "Une attaque désespérée, utilisée quand le lanceur n’a plus de PP. Le blesse aussi légèrement.",
         "puissance": 50,
-        "precision": "-",
+        "precision": 100,
         "pp": 1,
         "classe": "Physique"
     },
@@ -1102,7 +1102,7 @@
         "type": "Plante",
         "discription": "Le lanceur attaque en jetant un bouquet de fleurs piégé sur la cible. N’échoue jamais et inflige toujours un coup critique.",
         "puissance": 70,
-        "precision": "-",
+        "precision": 100,
         "pp": 10,
         "classe": "Physique"
     },
@@ -1318,7 +1318,7 @@
         "type": "Spectre",
         "discription": "Le lanceur se fond dans les ombres pour porter un coup de poing. N’échoue jamais.",
         "puissance": 60,
-        "precision": "-",
+        "precision": 100,
         "pp": 20,
         "classe": "Physique"
     },

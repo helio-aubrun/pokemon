@@ -8,7 +8,7 @@ import ia
 class combat():
 
     def __init__(self):
-        pass
+        self.testx = True
 
     def speed (self):
         #choisi qui commence en fonction de la vitesse
@@ -58,7 +58,7 @@ class combat():
                 prod = prod * 0
             else:
                 prod = prod * 1
-        print (prod)
+
         return prod
         
     def precision (self,attaque):
@@ -70,12 +70,11 @@ class combat():
             return False
         
     def fin_combat (self):
-        True
         if self.poke1.pv <= 0 or self.poke2.pv <= 0 :
             #le poke1 sera toujours le poke joueur
             #if self.poke2.pv <= 0 :
                 #self.poke1.gain_exp(self.poke2)
-            print ("Combat fini")
+            #print ("Combat fini")
             False
     
     def stab (self, attaque, poke):
@@ -96,60 +95,90 @@ class combat():
         if self.precision(attaque):
             if attaque.classe == "Physique":
                 damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk*attaque.puissance)/poke_def.defense)/50)+2)*cm))
-                print (damage)
+                #print (damage)
             elif attaque.classe == "Spécial":
                 damage = round(abs((abs(abs((abs(poke_att.lv*0.4+2)*poke_att.atk_spe*attaque.puissance)/poke_def.def_spe)/50)+2)*cm))
-                print (damage)
+                #print (damage)
             return damage
         else:
             return 0
     
-    def choose_attack(self, poke1, poke2, n, ia_attack_index=None):
+    def choose_attack(self, poke1, poke2, n):
         self.poke1 = poke1
         self.poke2 = poke2
         id = self.poke1.atk_id[n]
         atk_poke1 = class_attaque.Attaque(id)
         #attaque choisie par l'IA
-        id = self.poke2.atk_id[ia_attack_index]
+        id = self.poke2.atk_id[int (random.randint (0, len (poke2.attaques)-1))]
         atk_poke2 = class_attaque.Attaque(id)
         self.dammage(atk_poke1, atk_poke2)
         
             
     def dammage(self,atk_poke1, atk_poke2):
         self.speed()
-        print (self.first.nom)
+        #print (self.first.nom)
         # en fonction de qui attaque en premier, appele la methode loose_pv de la class pkm avec la methode calcul_damage et verifie si le combat est fini
         if self.first == self.poke1:
             self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
-            print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
+            #print (self.calcul_damage(atk_poke1,self.poke1, self.poke2),"pv inflige, pv restant :",self.poke2.pv)
             self.fin_combat ()
             if self.testx:
                 self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
-                print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
+                #print (self.calcul_damage(atk_poke2,self.poke2,self.poke1),"pv inflige, pv restant :",self.poke1.pv)
                 self.fin_combat ()
         elif self.first == self.poke2:
             self.poke1.loose_pv(self.calcul_damage(atk_poke2,self.poke2,self.poke1))
-            print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
+            #print (self.calcul_damage(atk_poke2,self.poke2, self.poke1),"pv inflige, pv restant :",self.poke1.pv)
             self.fin_combat ()
             if self.testx:
                 self.poke2.loose_pv(self.calcul_damage(atk_poke1,self.poke1,self.poke2))
-                print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
+                #print (self.calcul_damage(atk_poke1,self.poke1,self.poke2),"pv inflige, pv restant :",self.poke2.pv)
                 self.fin_combat ()
+
+    #calcule des degat et aplication pour le combat graphic
+    def damage_graph (self, pkm_off, pkm_def) :
+
+        return 
             
     def combat_dress(self, dress1, dress2):
         nb_ko1 = 0
         nb_ko2 = 0
         #regarde le nombre de poke KO de chaque equipe et return False si tous KO
-        for poke in range(len(dress1)):
-            if dress1[poke].pv <= 0:
+        for poke in range(len(dress1.equipe)):
+            if dress1.equipe[poke].pv <= 0:
                 nb_ko1 += 1
                 if nb_ko1 == len(dress1):
                     return False
-        for poke2 in range(len(dress2)):
-            if dress2[poke2].pv <= 0:
+        for poke2 in range(len(dress2.equipe)):
+            if dress2.equipe[poke2].pv <= 0:
                 nb_ko2 += 1
                 if nb_ko2 == len(dress1):
                     return False
 
     def switch(self,n, dress1):
         self.poke1 = dress1.equipe[n]
+
+
+
+'''if __name__ == "__main__":
+    #test des methodes
+    with open("pokedex.json", "r") as f:
+        pokedex = json.load(f)
+    pokemon_29 = pokedex.get("42")
+    pokemon_10 = pokedex.get("15")
+    test = class_pkm.pkm_dress(pokemon_29, 39)
+    test2 = class_pkm.pkm(pokemon_10,100)
+    print(f"Nom du Pokémon : {test.nom}")
+    print(f"Type du Pokémon : {test.type}")
+    print(f"pv : {test.pv}")
+    print(f"lv : {test.lv}")
+    print(f"Nom du Pokémon : {test2.nom}")
+    print(f"Type du Pokémon : {test2.type}")
+    print(f"pv : {test2.pv}")
+    fight = combat()
+    #fight.en_combat(test, test2)
+    red = class_dress_enemy.dress_enemy("Red")
+    red.ajout_team()
+    ethan = class_dress_enemy.dress_enemy("Ethan")
+    ethan.ajout_team()
+    fight.combat_dress(red, ethan)'''

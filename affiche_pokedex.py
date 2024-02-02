@@ -63,7 +63,7 @@ class affiche_pokedex :
         self.screen.blit (self.left, (500,30))
         self.screen.blit (self.right, (600,30))
         font = pygame.font.Font(None, 36)
-        back_texte = font.render("Retour ",1 ,(10,10,10))
+        back_texte = font.render("Echap ",1 ,(10,10,10))
         self.screen.blit(back_texte,(690,40))
 
 
@@ -81,7 +81,6 @@ class affiche_pokedex :
                     # Get the position of the mouse click
                     x,y = event.pos
                     # Check if the mouse click was within the rectangle
-                    print (x,y)
                     if 38 <= y <= 70:
                         if 501 <= x <= 547:
                             id -= 1
@@ -93,6 +92,17 @@ class affiche_pokedex :
                                 id = 51
                         elif 690 <= x <= 768:
                             running = False
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_LEFT:
+                        id -= 1
+                        if id < 1 :
+                            id = 1
+                    elif event.key == pygame.K_RIGHT:
+                        id += 1
+                        if id > 51:
+                            id = 51
+                    elif event.key == pygame.K_ESCAPE:
+                        running = False
 
             self.screen.fill((0, 0, 0))
             self.screen.blit (self.fond, (0, 0))

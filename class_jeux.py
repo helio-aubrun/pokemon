@@ -3,6 +3,8 @@ from pygame import mixer
 import sys
 import class_dress_enemy
 import affiche_pokedex
+import json
+import class_combat_graphic
 
 mixer.init()
 mixer.music.load("ost/title.mp3")
@@ -24,6 +26,7 @@ class jeux():
         self.img_pokedex = pygame.image.load("image/pokedex.png")
         self.img_pokedex = pygame.transform.scale(self.img_pokedex,(100,100))
         self.pokedex = affiche_pokedex.affiche_pokedex()
+        self.combat = class_combat_graphic.Screen()
 
     def main(self):
         #reglage son
@@ -44,6 +47,9 @@ class jeux():
             self.screen.blit(bg,(0,0))
             pygame.display.flip()
         #2eme ecran
+        with open('list_pkm_joueur.json', 'w') as f:
+            f.truncate()
+            f.write('{}')
         while self.in_choice:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -52,6 +58,22 @@ class jeux():
                     #permet d'entrer un id et de l'ajouter à equipe
                     if event.key == pygame.K_RETURN:
                         if 1 <= int(self.input_text) <= 51 and len(self.equipe) <= 5:
+                            with open('list_pkm_joueur.json', 'r') as f:
+                                pkm_joueur_data = json.load(f)
+
+                    # Get data from pokedex.json
+                            with open('pokedex.json', 'r') as f:
+                                pokedex_data = json.load(f)
+                                pokemon_data = pokedex_data.get(self.input_text)
+
+                    # Add new entry to pkm_joueur_data
+                            new_key = len(pkm_joueur_data) + 1 # Auto-increment key
+                            pkm_joueur_data[str(new_key)] = pokemon_data
+
+                    # Write updated data back to list_pkm_joueur.json
+                            with open('list_pkm_joueur.json', 'w') as f:
+                                json.dump(pkm_joueur_data, f)
+
                             self.equipe.append(self.input_text)
                             joueur.ajout_team_game(self.input_text)
                             self.input_text = ""
@@ -70,12 +92,14 @@ class jeux():
                         print ("Play")
                         mixer.music.load("ost/dress.mp3")
                         mixer.music.play(-1)
+                        self.combat.run()
+                        
             #affichage de tout les elements
             self.screen.blit(bg_choice,(0,0))
             pygame.draw.rect(self.screen, (255, 255, 255), pygame.Rect(300, 250, 200, 50), 2)
             font = pygame.font.Font(None, 36)
             text = font.render(self.input_text, 1, (10, 10, 10))
-            id_texte = font.render("ID : ",1 ,(10,10,10))
+            id_texte = font.render("N° : ",1 ,(10,10,10))
             pokedex_text = font.render("pokedex ",1 ,(10,10,10))
             self.screen.blit(pokedex_text,(700,90))
             self.screen.blit(self.img_pokedex, (700, 5))
@@ -94,6 +118,6 @@ class jeux():
 pygame.init()
 joueur = class_dress_enemy.dress_enemy("Joueur")
 adv = class_dress_enemy.dress_enemy("adversaire")
-adv.random_team()
+adv.random_team(4)
 jeux().main()
 pygame.quit()
