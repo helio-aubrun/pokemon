@@ -1,0 +1,1712 @@
+{
+    "1": {
+        "nom": "Acide Malique",
+        "type": "Plante",
+        "discription": "Le lanceur projette un liquide corrosif créé à partir d’une pomme acide sur la cible, ce qui baisse la Défense Spécial de celle-ci.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "2": {
+        "nom": "Aire d’Eau",
+        "type": "Eau",
+        "discription": "Une masse d’eau s’abat sur la cible. Si cette capacité est utilisée en même temps qu’Aire de Feu, la puissance augmente et un arc-en-ciel apparaît.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "3": {
+        "nom": "Aire d’Herbe",
+        "type": "Plante",
+        "discription": "Une masse végétale s’abat sur la cible. Si cette capacité est utilisée en même temps qu’Aire d’Eau, la puissance augmente et un marécage apparaît.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "4": {
+        "nom": "Aire de Feu",
+        "type": "Feu",
+        "discription": "Une masse de feu s’abat sur la cible. Si cette capacité est utilisée en même temps qu’Aire d’Herbe, la puissance augmente et une mer de feu apparaît.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "5": {
+        "nom": "Aqua-Brèche",
+        "type": "Eau",
+        "discription": "Le lanceur utilise la force de l’eau pour attaquer. Peut aussi baisser la Défense de la cible.",
+        "puissance": 85,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "6": {
+        "nom": "Aqua-Jet",
+        "type": "Eau",
+        "discription": "Le lanceur fonce sur la cible si rapidement qu’on parvient à peine à le discerner. Frappe en priorité.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "7": {
+        "nom": "Aquatacle",
+        "type": "Eau",
+        "discription": "Le lanceur se recouvre entièrement d’eau avant de charger sa cible. Cela blesse aussi gravement le lanceur.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "8": {
+        "nom": "Aria de l’Écume",
+        "type": "Eau",
+        "discription": "Le lanceur émet plusieurs bulles en chantant. Soigne les brûlures des Pokémon touchés par ces bulles.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "9": {
+        "nom": "Ball’Météo",
+        "type": "Normal",
+        "discription": "Une capacité dont la puissance et le type varient en fonction du temps qu’il fait.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "10": {
+        "nom": "Ball’Ombre",
+        "type": "Spectre",
+        "discription": "Le lanceur projette une grande ombre sur la cible qui peut aussi faire baisser la Défense Spécial de celle-ci.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "11": {
+        "nom": "Balle Graine",
+        "type": "Plante",
+        "discription": "Le lanceur mitraille la cible avec une rafale de graines. De deux à cinq rafales sont lancées à la suite.",
+        "puissance": 25,
+        "precision": 100,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "12": {
+        "nom": "Ballon Brûlant",
+        "type": "Feu",
+        "discription": "Le lanceur attaque avec un ballon fait à partir d’un caillou enflammé. Peut aussi brûler la cible.",
+        "puissance": 120,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "13": {
+        "nom": "Bang Sonique",
+        "type": "Normal",
+        "discription": "Attaque les Pokémon alentour grâce à une onde sonore assourdissante qui détruit tout sur son passage.",
+        "puissance": 140,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "14": {
+        "nom": "Bélier",
+        "type": "Normal",
+        "discription": "Une charge violente qui blesse aussi légèrement le lanceur.",
+        "puissance": 90,
+        "precision": 85,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "15": {
+        "nom": "Bluff",
+        "type": "Normal",
+        "discription": "Le lanceur frappe en priorité et apeure la cible. La capacité ne fonctionne que si elle est utilisée immédiatement en entrant au combat.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "16": {
+        "nom": "Bombe au Sirop",
+        "type": "Plante",
+        "discription": "Le lanceur jette une bombe qui recouvre la cible de sirop gluant et fait progressivement baisser la Vitesse de la cible pendant trois tours.",
+        "puissance": 60,
+        "precision": 85,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "17": {
+        "nom": "Botte Sucrette",
+        "type": "Plante",
+        "discription": "Un coup de pied chaud comme les tropiques qui inflige des dégâts à la cible et baisse son Attaque.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "18": {
+        "nom": "Boutefeu",
+        "type": "Feu",
+        "discription": "Le lanceur s’embrase avant de charger la cible, ce qui peut la brûler. Le choc blesse aussi gravement le lanceur.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "19": {
+        "nom": "Brouhaha",
+        "type": "Normal",
+        "discription": "Le lanceur attaque en rugissant durant trois tours. Pendant ce temps, aucun Pokémon ne peut s’endormir.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "20": {
+        "nom": "Bulles d’O",
+        "type": "Eau",
+        "discription": "Des bulles sont envoyées avec puissance sur la cible, ce qui peut aussi baisser sa Vitesse.",
+        "puissance": 65,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "21": {
+        "nom": "Cadeau",
+        "type": "Normal",
+        "discription": "Le lanceur attaque en offrant un cadeau piégé à la cible, mais le cadeau peut parfois restaurer les PV de celle-ci à la place.",
+        "puissance": 1,
+        "precision": 90,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "22": {
+        "nom": "Calcination",
+        "type": "Feu",
+        "discription": "Des flammes calcinent la cible. Si elle tient un objet, une Baie par exemple, celui-ci est brûlé et devient inutilisable.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "23": {
+        "nom": "Canicule",
+        "type": "Feu",
+        "discription": "Le lanceur provoque une vague de chaleur qui peut aussi brûler la cible.",
+        "puissance": 95,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "24": {
+        "nom": "Canon Blindé",
+        "type": "Feu",
+        "discription": "Le lanceur tire un boulet de canon ardent provenant de sa propre armure sur la cible. Cela baisse la Défense et la Défense Spécial du lanceur.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "25": {
+        "nom": "Canon Graine",
+        "type": "Plante",
+        "discription": "Le lanceur déclenche un déluge de grosses graines à la coque solide sur la cible.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "26": {
+        "nom": "Cascade",
+        "type": "Eau",
+        "discription": "Le lanceur charge la cible avec une intensité remarquable, ce qui peut l’apeurer.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "27": {
+        "nom": "Champlification",
+        "type": "Normal",
+        "discription": "Une attaque qui utilise la force des champs pour projeter une aura. Son type et sa puissance varient selon le champ actif.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "28": {
+        "nom": "Chant Antique",
+        "type": "Normal",
+        "discription": "Le lanceur attaque la cible en lui chantant une chanson d’un autre temps qui peut aussi l’endormir.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "29": {
+        "nom": "Chant Canon",
+        "type": "Normal",
+        "discription": "Le lanceur attaque la cible en chantant. Si plusieurs Pokémon déclenchent cette attaque à la suite, la puissance augmente.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "30": {
+        "nom": "Chant Flamboyant",
+        "type": "Feu",
+        "discription": "Le lanceur carbonise la cible en projetant sur elle de vives flammes créées par un chant. Cette capacité augmente l’Attaque Spécial du lanceur.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "31": {
+        "nom": "Charge",
+        "type": "Normal",
+        "discription": "Le lanceur charge la cible et la percute de tout son poids.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 35,
+        "classe": "Physique"
+    },
+    "32": {
+        "nom": "Châtiment",
+        "type": "Spectre",
+        "discription": "Une attaque acharnée qui cause davantage de dégâts à la cible si elle a une altération de statut.",
+        "puissance": 65,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "33": {
+        "nom": "Cœur de Rancœur",
+        "type": "Spectre",
+        "discription": "Une rancœur glaciale frappe la cible et baisse son Attaque.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "34": {
+        "nom": "Combo-Griffe",
+        "type": "Normal",
+        "discription": "La cible est lacérée par des faux ou des griffes de deux à cinq fois d’affilée.",
+        "puissance": 18,
+        "precision": 80,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "35": {
+        "nom": "Coqui-Lame",
+        "type": "Eau",
+        "discription": "Un coquillage aiguisé lacère la cible et peut aussi baisser sa Défense.",
+        "puissance": 75,
+        "precision": 95,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "36": {
+        "nom": "Cortège Funèbre",
+        "type": "Spectre",
+        "discription": "Une multitude de boules de feu frappent la cible, ce qui peut aussi la brûler. La puissance est doublée si celle-ci souffre d’une altération de statut.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "37": {
+        "nom": "Coup d’Boule",
+        "type": "Normal",
+        "discription": "Le lanceur donne un coup de tête à la cible qui peut aussi l’apeurer.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "38": {
+        "nom": "Coup Double",
+        "type": "Normal",
+        "discription": "Le lanceur frappe la cible deux fois d’affilée à l’aide de sa queue ou d’un autre membre.",
+        "puissance": 35,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "39": {
+        "nom": "Coup Victoire",
+        "type": "Feu",
+        "discription": "Le lanceur fait jaillir des flammes ardentes de son front et se jette sur la cible, ce qui baisse la Défense, la Défense Spécial et la Vitesse du lanceur.",
+        "puissance": 180,
+        "precision": 95,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "40": {
+        "nom": "Coupe",
+        "type": "Normal",
+        "discription": "Coupe la cible avec des lames ou des griffes.",
+        "puissance": 50,
+        "precision": 95,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "41": {
+        "nom": "Crash Brûlant",
+        "type": "Feu",
+        "discription": "- - -",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "42": {
+        "nom": "Croc Fatal",
+        "type": "Normal",
+        "discription": "Une vilaine morsure d’incisives qui réduit de moitié les PV de la cible.",
+        "puissance": 1,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "43": {
+        "nom": "Crocs Feu",
+        "type": "Feu",
+        "discription": "Le lanceur utilise une morsure enflammée qui peut aussi brûler ou apeurer la cible.",
+        "puissance": 65,
+        "precision": 95,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "44": {
+        "nom": "Damoclès",
+        "type": "Normal",
+        "discription": "Une charge dangereuse et imprudente. Blesse aussi gravement le lanceur.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "45": {
+        "nom": "Danse Aquatique",
+        "type": "Eau",
+        "discription": "Le lanceur se joue de la cible et lui inflige des dégâts avec ses pas de danse gracieux et légers. Cette capacité augmente la Vitesse du lanceur.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "46": {
+        "nom": "Danse du Feu",
+        "type": "Feu",
+        "discription": "Le lanceur s’enveloppe de flammes et attaque la cible, Cela peut aussi augmenter l’Attaque Spécial du lanceur.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "47": {
+        "nom": "Danse Éveil",
+        "type": "Normal",
+        "discription": "Le lanceur attaque en dansant avec enthousiasme. Le type de la capacité est le même que celui du lanceur.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "48": {
+        "nom": "Danse Flammes",
+        "type": "Feu",
+        "discription": "Un tourbillon de flammes emprisonne la cible pendant quatre à cinq tours.",
+        "puissance": 35,
+        "precision": 85,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "49": {
+        "nom": "Danse Fleurs",
+        "type": "Plante",
+        "discription": "Le lanceur attaque en projetant des pétales pendant deux à trois tours avant de céder à la confusion.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "50": {
+        "nom": "Déflagration",
+        "type": "Feu",
+        "discription": "Un déluge de flammes ardentes submerge la cible, ce qui peut aussi la brûler.",
+        "puissance": 110,
+        "precision": 85,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "51": {
+        "nom": "Dernier Recours",
+        "type": "Normal",
+        "discription": "Cette capacité ne peut être utilisée qu’après que le lanceur a utilisé toutes les autres.",
+        "puissance": 140,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "52": {
+        "nom": "Désherbaffe",
+        "type": "Plante",
+        "discription": "Le lanceur surgit des hautes herbes pour attaquer la cible. Les mouvements agiles du lanceur augmentent sa Vitesse.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "53": {
+        "nom": "Destruction",
+        "type": "Normal",
+        "discription": "Le lanceur explose en blessant tous les Pokémon autour de lui. Le lanceur tombe K.O.",
+        "puissance": 200,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "54": {
+        "nom": "Douche Froide",
+        "type": "Eau",
+        "discription": "Le lanceur attaque la cible en l’arrosant d’une eau si froide qu’elle détériore son esprit combatif. Baisse l’Attaque de la cible.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "55": {
+        "nom": "Eau Revoir",
+        "type": "Eau",
+        "discription": "Après son attaque, le lanceur revient à toute vitesse et change de place avec un Pokémon de l’équipe prêt à combattre.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "56": {
+        "nom": "Ébullilave",
+        "type": "Feu",
+        "discription": "Des flammes s’abattent sur tous les Pokémon autour du lanceur, ce qui peut aussi les brûler.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "57": {
+        "nom": "Ébullition",
+        "type": "Eau",
+        "discription": "Le lanceur projette un jet d’eau bouillante sur la cible, ce qui peut aussi la brûler.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "58": {
+        "nom": "Écho",
+        "type": "Normal",
+        "discription": "Un cri retentissant blesse la cible. Si le lanceur ou d’autres Pokémon utilisent cette capacité à chaque tour, la puissance augmente.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "59": {
+        "nom": "Éclat Spectral",
+        "type": "Spectre",
+        "discription": "Le lanceur attaque la cible avec une multitude de petits spectres.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "60": {
+        "nom": "Éclate Griffe",
+        "type": "Normal",
+        "discription": "Le lanceur lacère la cible avec des griffes solides et aiguisées, ce qui peut aussi baisser la Défense de celle-ci.",
+        "puissance": 75,
+        "precision": 95,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "61": {
+        "nom": "Éco-Sphère",
+        "type": "Plante",
+        "discription": "Le lanceur utilise les pouvoirs de la nature pour attaquer la cible, ce qui peut aussi baisser la Défense Spécial de celle-ci.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "62": {
+        "nom": "Écras’Face",
+        "type": "Normal",
+        "discription": "Le lanceur écrase la cible avec l’un de ses membres, tels qu’une de ses pattes avant ou sa longue queue.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 35,
+        "classe": "Physique"
+    },
+    "63": {
+        "nom": "Écrasement",
+        "type": "Normal",
+        "discription": "Écrase la cible avec un énorme pied, ce qui peut aussi l’apeurer.",
+        "puissance": 65,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "64": {
+        "nom": "Effort",
+        "type": "Normal",
+        "discription": "Une attaque qui réduit les PV de la cible au niveau des PV du lanceur.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "65": {
+        "nom": "Empal’Korne",
+        "type": "Normal",
+        "discription": "Un coup de corne en vrille qui empale la cible, la mettant K.O. sur le coup si elle est touchée.",
+        "puissance": 1,
+        "precision": 30,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "66": {
+        "nom": "Encornebois",
+        "type": "Plante",
+        "discription": "Un coup de cornes qui draine l’énergie de la cible. La capacité convertit la moitié des dégâts infligés en PV pour le lanceur.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "67": {
+        "nom": "Éruption",
+        "type": "Feu",
+        "discription": "Le lanceur laisse exploser sa colère. Plus ses PV sont bas, moins l’attaque est puissante.",
+        "puissance": 150,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "68": {
+        "nom": "Esprit Frappeur",
+        "type": "Spectre",
+        "discription": "Le lanceur manipule l’objet tenu par la cible pour l’attaquer. Cette capacité échoue si celle-ci ne tient rien.",
+        "puissance": 110,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "69": {
+        "nom": "Étonnement",
+        "type": "Spectre",
+        "discription": "Le lanceur attaque la cible en poussant un cri terrifiant qui peut aussi l’apeurer.",
+        "puissance": 30,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "70": {
+        "nom": "Étreinte",
+        "type": "Normal",
+        "discription": "Le lanceur ligote la cible avec son corps allongé ou ses tentacules pour la compresser durant quatre à cinq tours.",
+        "puissance": 15,
+        "precision": 85,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "71": {
+        "nom": "Explosion",
+        "type": "Normal",
+        "discription": "Le lanceur explose et inflige des dégâts à tous les Pokémon autour de lui. Met K.O. le lanceur.",
+        "puissance": 250,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "72": {
+        "nom": "Façade",
+        "type": "Normal",
+        "discription": "Une capacité dont la puissance double lorsque le lanceur est empoisonné, paralysé ou brûlé.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "73": {
+        "nom": "Faux-Chage",
+        "type": "Normal",
+        "discription": "Le lanceur retient ses coups pour que la cible garde au moins 1 PV et ne tombe pas K.O.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 40,
+        "classe": "Physique"
+    },
+    "74": {
+        "nom": "Feu d’Enfer",
+        "type": "Feu",
+        "discription": "La cible est entourée d’un torrent de flammes ardentes qui la brûlent.",
+        "puissance": 100,
+        "precision": 50,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "75": {
+        "nom": "Feu Ensorcelé",
+        "type": "Feu",
+        "discription": "Le lanceur attaque en soufflant des flammes brûlantes par la bouche et diminue l’Attaque Spécial de la cible.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "76": {
+        "nom": "Feu Envieux",
+        "type": "Feu",
+        "discription": "Le lanceur attaque sa cible avec toute sa jalousie. Cette capacité brûle tout Pokémon dont les stats ont augmenté pendant ce tour.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "77": {
+        "nom": "Feu Sacré",
+        "type": "Feu",
+        "discription": "Le lanceur génère un feu mystique d’une intensité redoutable pour attaquer la cible, ce qui peut aussi la brûler.",
+        "puissance": 100,
+        "precision": 95,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "78": {
+        "nom": "Feuillage",
+        "type": "Plante",
+        "discription": "Le lanceur attaque la cible avec des feuilles.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 40,
+        "classe": "Physique"
+    },
+    "79": {
+        "nom": "Feuille Magik",
+        "type": "Plante",
+        "discription": "Le lanceur disperse d’étranges feuilles qui poursuivent la cible. N’échoue jamais.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "80": {
+        "nom": "Flamme Bleue",
+        "type": "Feu",
+        "discription": "De magnifiques et redoutables flammes bleues s’abattent sur la cible, et peuvent aussi la brûler.",
+        "puissance": 130,
+        "precision": 85,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "81": {
+        "nom": "Flamme Croix",
+        "type": "Feu",
+        "discription": "Le lanceur projette une boule de feu gigantesque. La puissance de la capacité augmente sous l’influence d’Éclair Croix.",
+        "puissance": 100,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "82": {
+        "nom": "Flamme Ultime",
+        "type": "Feu",
+        "discription": "Le Pokémon se consume et les flammes de son corps infligent des dégâts élevés à la cible. Le lanceur perd le type Feu.",
+        "puissance": 130,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "83": {
+        "nom": "Flammèche",
+        "type": "Feu",
+        "discription": "La cible est attaquée par une faible flamme qui peut aussi la brûler.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Spécial"
+    },
+    "84": {
+        "nom": "Force",
+        "type": "Normal",
+        "discription": "Le lanceur cogne la cible de toutes ses forces.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "85": {
+        "nom": "Force G",
+        "type": "Plante",
+        "discription": "Le lanceur fait tomber une pomme de très haut sur la cible, ce qui baisse la Défense de celle-ci.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "86": {
+        "nom": "Force Poigne",
+        "type": "Normal",
+        "discription": "La cible est attrapée et compressée par les côtés.",
+        "puissance": 55,
+        "precision": 100,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "87": {
+        "nom": "Fouet de Feu",
+        "type": "Feu",
+        "discription": "Frappe la cible avec un fouet incandescent et baisse sa Défense.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "88": {
+        "nom": "Fouet Lianes",
+        "type": "Plante",
+        "discription": "Fouette la cible avec de fines lianes pour infliger des dégâts.",
+        "puissance": 45,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Physique"
+    },
+    "89": {
+        "nom": "Fulmigraine",
+        "type": "Plante",
+        "discription": "Le corps du lanceur émet une onde de choc. Peut aussi beaucoup baisser la Défense Spécial de la cible.",
+        "puissance": 120,
+        "precision": 85,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "90": {
+        "nom": "Furie",
+        "type": "Normal",
+        "discription": "Frappe la cible deux à cinq fois d’affilée avec un membre pointu tel qu’un bec ou une corne.",
+        "puissance": 15,
+        "precision": 85,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "91": {
+        "nom": "Giclédo",
+        "type": "Eau",
+        "discription": "Le lanceur attaque avec un jet d’eau. Moins il a de PV et moins l’attaque est puissante.",
+        "puissance": 150,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "92": {
+        "nom": "Giga Impact",
+        "type": "Normal",
+        "discription": "Le lanceur charge la cible de toute ses forces et doit ensuite se reposer au tour suivant.",
+        "puissance": 150,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "93": {
+        "nom": "Giga-Sangsue",
+        "type": "Plante",
+        "discription": "Une attaque qui absorbe les nutriments et convertit la moitié des dégâts infligés en PV pour le lanceur.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "94": {
+        "nom": "Gigotage",
+        "type": "Normal",
+        "discription": "Le lanceur attaque en gigotant dans tous les sens. Plus ses PV sont bas, plus l’attaque est puissante.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "95": {
+        "nom": "Gliss’Herbe",
+        "type": "Plante",
+        "discription": "Le lanceur attaque la cible en glissant sur le terrain. Frappe toujours en priorité si un champ herbu est actif.",
+        "puissance": 55,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "96": {
+        "nom": "Grand Courroux",
+        "type": "Feu",
+        "discription": "Le lanceur se déchaîne et attaque en projetant de violentes flammes pendant deux ou trois tours. Il devient ensuite confus.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "97": {
+        "nom": "Griffe",
+        "type": "Normal",
+        "discription": "Lacère la cible avec des griffes acérées pour lui infliger des dégâts.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 35,
+        "classe": "Physique"
+    },
+    "98": {
+        "nom": "Griffe Ombre",
+        "type": "Spectre",
+        "discription": "Attaque avec une griffe puissante faite d’ombres. Taux de critiques élevé.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "99": {
+        "nom": "Guillotine",
+        "type": "Normal",
+        "discription": "Des pinces lacèrent violemment la cible, la mettant K.O. sur le coup si elle est touchée.",
+        "puissance": 1,
+        "precision": 30,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "100": {
+        "nom": "Hantise",
+        "type": "Spectre",
+        "discription": "Le lanceur disparaît au premier tour et frappe au second. Cette attaque passe outre les protections.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "101": {
+        "nom": "Herblast",
+        "type": "Plante",
+        "discription": "Le lanceur tire un concentré de sa propre chlorophylle sur la cible, ce qui le blesse également.",
+        "puissance": 150,
+        "precision": 95,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "102": {
+        "nom": "Hommage Posthume",
+        "type": "Spectre",
+        "discription": "Le lanceur attaque pour venger ses alliés. Plus le nombre de Pokémon alliés mis K.O. est élevé, plus la puissance de cette capacité augmente.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "103": {
+        "nom": "Hydro-Queue",
+        "type": "Eau",
+        "discription": "Le lanceur attaque en balançant sa queue comme une lame de fond en pleine tempête.",
+        "puissance": 90,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "104": {
+        "nom": "Hydroblast",
+        "type": "Eau",
+        "discription": "Le lanceur projette un missile d’eau sur la cible, mais il doit se reposer au tour suivant.",
+        "puissance": 150,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "105": {
+        "nom": "Hydrocanon",
+        "type": "Eau",
+        "discription": "Un puissant jet d’eau est dirigé sur la cible.",
+        "puissance": 110,
+        "precision": 80,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "106": {
+        "nom": "Hydrovapeur",
+        "type": "Eau",
+        "discription": "Le lanceur asperge la cible avec un puissant jet d’eau bouillante. Quand le soleil brille, la puissance de cette capacité augmente de 50 % au lieu de baisser.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "107": {
+        "nom": "Hyperceuse",
+        "type": "Normal",
+        "discription": "Le lanceur fait tourner à toute vitesse la partie pointue de son corps afin de transpercer la cible. Ignore même les capacités comme Abri ou Détection.",
+        "puissance": 100,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "108": {
+        "nom": "Implore",
+        "type": "Normal",
+        "discription": "Le lanceur s’approche de la cible avec un air angélique afin de dérober l’objet qu’elle tient.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Physique"
+    },
+    "109": {
+        "nom": "Indignition",
+        "type": "Feu",
+        "discription": "Le lanceur utilise la force de son dépit pour attaquer. S’il a utilisé une capacité qui a échoué au tour précédent, la puissance d’Indignition est doublée.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "110": {
+        "nom": "Jackpot",
+        "type": "Normal",
+        "discription": "Des pièces sont lancées sur la cible. Permet d’obtenir de l’argent à la fin du combat.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "111": {
+        "nom": "Jet de Vapeur",
+        "type": "Eau",
+        "discription": "Le lanceur projette de la vapeur extrêmement chaude sur la cible, ce qui peut aussi la brûler.",
+        "puissance": 110,
+        "precision": 95,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "112": {
+        "nom": "Jugement",
+        "type": "Normal",
+        "discription": "Le lanceur libère une myriade de rayons de lumière. Le type varie selon la plaque que tient le lanceur.",
+        "puissance": 100,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "113": {
+        "nom": "Koud’Korne",
+        "type": "Normal",
+        "discription": "Frappe la cible d’un coup de corne pointue pour infliger des dégâts.",
+        "puissance": 65,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Physique"
+    },
+    "114": {
+        "nom": "Lame en Peine",
+        "type": "Feu",
+        "discription": "Le lanceur concentre son amertume du monde des vivants dans la pointe de ses épées et tranche la cible. La moitié des dégâts infligés sont convertis en PV pour le lanceur.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "115": {
+        "nom": "Lame Feuille",
+        "type": "Plante",
+        "discription": "Une feuille coupante comme une lame entaille la cible. Taux de critiques élevé.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "116": {
+        "nom": "Lame Solaire",
+        "type": "Plante",
+        "discription": "Le lanceur absorbe une grande quantité de lumière au premier tour et attaque au second tour en libérant cette énergie sous la forme d’une lame.",
+        "puissance": 125,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "117": {
+        "nom": "Lance-Flammes",
+        "type": "Feu",
+        "discription": "La cible reçoit un torrent de flammes qui peut aussi la brûler.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "118": {
+        "nom": "Lance-Soleil",
+        "type": "Plante",
+        "discription": "Le lanceur absorbe une grande quantité de lumière au premier tour et envoie un rayon puissant au tour suivant.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "119": {
+        "nom": "Léchouille",
+        "type": "Spectre",
+        "discription": "Un grand coup de langue qui inflige des dégâts à la cible et peut aussi la paralyser.",
+        "puissance": 30,
+        "precision": 100,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "120": {
+        "nom": "Ligotage",
+        "type": "Normal",
+        "discription": "Le lanceur ligote la cible avec son corps allongé ou ses tentacules pour la compresser durant quatre à cinq tours.",
+        "puissance": 15,
+        "precision": 90,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "121": {
+        "nom": "Lune Rouge",
+        "type": "Normal",
+        "discription": "Le lanceur concentre toute son énergie dans la lune rouge sang sur son front et la projette sur la cible. Cette capacité ne peut pas être utilisée deux fois d’affilée.",
+        "puissance": 140,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "122": {
+        "nom": "Lutte",
+        "type": "Normal",
+        "discription": "Une attaque désespérée, utilisée quand le lanceur n’a plus de PP. Le blesse aussi légèrement.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 1,
+        "classe": "Physique"
+    },
+    "123": {
+        "nom": "Magie Florale",
+        "type": "Plante",
+        "discription": "Le lanceur attaque en jetant un bouquet de fleurs piégé sur la cible. N’échoue jamais et inflige toujours un coup critique.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "124": {
+        "nom": "Mania",
+        "type": "Normal",
+        "discription": "Une attaque furieuse qui dure de deux à trois tours. Le lanceur devient confus.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "125": {
+        "nom": "Martobois",
+        "type": "Plante",
+        "discription": "Le lanceur heurte la cible de son corps robuste, ce qui blesse aussi gravement le lanceur.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "126": {
+        "nom": "Massue Liane",
+        "type": "Plante",
+        "discription": "Le lanceur frappe la cible à l’aide d’une massue entourée d’une liane. Le type de cette capacité varie en fonction du masque que porte le lanceur. Taux de critiques élevé.",
+        "puissance": 100,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "127": {
+        "nom": "Méga-Sangsue",
+        "type": "Plante",
+        "discription": "Une attaque qui absorbe les nutriments et convertit la moitié des dégâts infligés en PV pour le lanceur.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "128": {
+        "nom": "Mégafouet",
+        "type": "Plante",
+        "discription": "Le lanceur fait virevolter violemment ses lianes ou ses tentacules pour fouetter la cible.",
+        "puissance": 120,
+        "precision": 85,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "129": {
+        "nom": "Mégaphone",
+        "type": "Normal",
+        "discription": "Le lanceur pousse un cri dont l’écho terrifiant a le pouvoir d’infliger des dégâts à la cible.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "130": {
+        "nom": "Météores",
+        "type": "Normal",
+        "discription": "Le lanceur envoie des rayons d’étoiles qui touchent toujours la cible.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "131": {
+        "nom": "Mortier Matcha",
+        "type": "Plante",
+        "discription": "Le lanceur remue son thé et en bombarde la cible. La moitié des dégâts infligés sont convertis en PV pour le lanceur. Cette capacité peut aussi brûler la cible.",
+        "puissance": 80,
+        "precision": 90,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "132": {
+        "nom": "Nitrocharge",
+        "type": "Feu",
+        "discription": "Le lanceur s’entoure de flammes pour attaquer la cible. Il se concentre et sa Vitesse augmente.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "133": {
+        "nom": "Nœud Herbe",
+        "type": "Plante",
+        "discription": "Le lanceur fait des nœuds dans l’herbe pour faire trébucher la cible. Plus la cible est lourde, plus la puissance de cette capacité augmente.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "134": {
+        "nom": "Ocroupi",
+        "type": "Eau",
+        "discription": "Le lanceur attaque en projetant de l’eau boueuse. Peut aussi réduire la Précision de la cible.",
+        "puissance": 90,
+        "precision": 85,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "135": {
+        "nom": "Ombre Nocturne",
+        "type": "Spectre",
+        "discription": "Le lanceur invoque un mirage et inflige des dégâts égaux au niveau du lanceur.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "136": {
+        "nom": "Ombre Portée",
+        "type": "Spectre",
+        "discription": "Le lanceur étend son ombre pour frapper par-derrière. Frappe en priorité.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "137": {
+        "nom": "Onde Originelle",
+        "type": "Eau",
+        "discription": "Le lanceur projette une aura, et d’innombrables rayons lumineux d’un bleu étincelant s’abattent sur la cible.",
+        "puissance": 110,
+        "precision": 85,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "138": {
+        "nom": "Pied Brûleur",
+        "type": "Feu",
+        "discription": "Le lanceur envoie un coup de pied au taux de critiques élevé. Peut aussi brûler la cible.",
+        "puissance": 85,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "139": {
+        "nom": "Pince-Masse",
+        "type": "Eau",
+        "discription": "Une grande pince martèle la cible. Taux de critiques élevé.",
+        "puissance": 100,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "140": {
+        "nom": "Pistolet à O",
+        "type": "Eau",
+        "discription": "De l’eau est projetée avec force sur la cible.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Spécial"
+    },
+    "141": {
+        "nom": "Plaquage",
+        "type": "Normal",
+        "discription": "Le lanceur se laisse tomber sur la cible de tout son poids, ce qui peut aussi la paralyser.",
+        "puissance": 85,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "142": {
+        "nom": "Plongée",
+        "type": "Eau",
+        "discription": "Le lanceur plonge sous l’eau au premier tour et frappe au second.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "143": {
+        "nom": "Pluie Térastrale",
+        "type": "Normal",
+        "discription": "Le lanceur bombarde la cible afin de l’éliminer grâce au pouvoir des cristaux. Si le lanceur est Terapagos sous sa Forme Stellaire, la capacité touche tous les ennemis.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "144": {
+        "nom": "Plumo-Queue",
+        "type": "Normal",
+        "discription": "Le lanceur frappe la cible de deux à cinq fois d’affilée avec sa queue robuste.",
+        "puissance": 25,
+        "precision": 85,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "145": {
+        "nom": "Poing de Colère",
+        "type": "Spectre",
+        "discription": "Le lanceur transforme sa colère en énergie pour attaquer. Plus il a subi d’attaques, plus la puissance de cette capacité augmente.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "146": {
+        "nom": "Poing Feu",
+        "type": "Feu",
+        "discription": "Un coup de poing enflammé vient frapper la cible, ce qui peut la brûler.",
+        "puissance": 75,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "147": {
+        "nom": "Poing Ombre",
+        "type": "Spectre",
+        "discription": "Le lanceur se fond dans les ombres pour porter un coup de poing. N’échoue jamais.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "148": {
+        "nom": "Poing Sonique",
+        "type": "Eau",
+        "discription": "Le lanceur enveloppe son poing d’un torrent furieux et attaque si rapidement qu’on peine à le discerner. Frappe en priorité.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "149": {
+        "nom": "Presse",
+        "type": "Normal",
+        "discription": "Une force oppressante écrase la cible. Plus il lui reste de PV, plus la puissance de la capacité augmente.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "150": {
+        "nom": "Prolifération",
+        "type": "Normal",
+        "discription": "Le lanceur et ses congénères prolifèrent en masse et attaquent ensemble d’une à dix fois d’affilée.",
+        "puissance": 20,
+        "precision": 90,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "151": {
+        "nom": "Rafale Feu",
+        "type": "Feu",
+        "discription": "Une explosion ardente consume la cible. Le lanceur doit se reposer au tour suivant.",
+        "puissance": 150,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "152": {
+        "nom": "Rayon Spectral",
+        "type": "Spectre",
+        "discription": "Le lanceur attaque avec un rayon de lumière mystérieux. Ignore le talent de la cible.",
+        "puissance": 100,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "153": {
+        "nom": "Relâche",
+        "type": "Normal",
+        "discription": "Libère dans une attaque l’énergie précédemment emmagasinée avec Stockage. La puissance augmente en fonction du nombre de fois où Stockage a été utilisée.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "154": {
+        "nom": "Retenue",
+        "type": "Normal",
+        "discription": "Le lanceur attaque avec retenue, et laisse au moins 1 PV à la cible.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 40,
+        "classe": "Physique"
+    },
+    "155": {
+        "nom": "Revenant",
+        "type": "Spectre",
+        "discription": "Le lanceur disparaît au premier tour et frappe la cible au deuxième. Cette capacité fonctionne même si la cible se protège.",
+        "puissance": 120,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "156": {
+        "nom": "Ronflement",
+        "type": "Normal",
+        "discription": "Une attaque qui ne fonctionne que si le lanceur est endormi. Le boucan peut aussi apeurer la cible.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "157": {
+        "nom": "Roue de Feu",
+        "type": "Feu",
+        "discription": "Le lanceur s’entoure de feu et charge la cible, ce qui peut aussi la brûler.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Physique"
+    },
+    "158": {
+        "nom": "Ruse",
+        "type": "Normal",
+        "discription": "Une attaque capable de toucher une cible qui utilise une capacité similaire à Détection ou Abri, et annule l’effet de cette capacité.",
+        "puissance": 30,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "159": {
+        "nom": "Saumure",
+        "type": "Eau",
+        "discription": "La puissance de cette capacité est doublée lorsque la cible a moins de la moitié de ses PV.",
+        "puissance": 65,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "160": {
+        "nom": "Sheauriken",
+        "type": "Eau",
+        "discription": "Le lanceur attaque la cible avec des shuriken de mucus. Cette capacité frappe en priorité deux à cinq fois d’affilée en un tour.",
+        "puissance": 15,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "161": {
+        "nom": "Siphon",
+        "type": "Eau",
+        "discription": "Le lanceur piège la cible dans une trombe d’eau pendant quatre à cinq tours.",
+        "puissance": 35,
+        "precision": 85,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "162": {
+        "nom": "Souplesse",
+        "type": "Normal",
+        "discription": "Le lanceur utilise l’un de ses membres, tels qu’une queue ou une liane, pour infliger des dégâts à la cible.",
+        "puissance": 80,
+        "precision": 75,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "163": {
+        "nom": "Surchauffe",
+        "type": "Feu",
+        "discription": "Le lanceur attaque la cible à pleine puissance, mais le contrecoup baisse beaucoup l’Attaque Spécial du lanceur.",
+        "puissance": 130,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "164": {
+        "nom": "Surf",
+        "type": "Eau",
+        "discription": "Une énorme vague s’abat sur le champ de bataille et inflige des dégâts à tous les Pokémon autour du lanceur.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "165": {
+        "nom": "Tacle Feu",
+        "type": "Feu",
+        "discription": "Le lanceur projette son corps enflammé contre la cible. Plus il est lourd par rapport à la cible, plus la puissance de cette capacité augmente.",
+        "puissance": 1,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "166": {
+        "nom": "Tambour Battant",
+        "type": "Plante",
+        "discription": "Le lanceur bat son tambour pour en diriger les racines sur la cible, l’attaquer, et baisser sa Vitesse.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "167": {
+        "nom": "Tapotige",
+        "type": "Plante",
+        "discription": "Le lanceur attaque sa cible en la piquant avec une branche pointue.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 40,
+        "classe": "Physique"
+    },
+    "168": {
+        "nom": "Taurogne",
+        "type": "Normal",
+        "discription": "Le lanceur charge la cible comme un taureau enragé. Le type de cette capacité dépend de la race du lanceur, et brise les barrières comme Mur Lumière et Protection.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "169": {
+        "nom": "Tempête Florale",
+        "type": "Plante",
+        "discription": "Déclenche une violente tempête de fleurs qui inflige des dégâts à tous les Pokémon alentour.",
+        "puissance": 90,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Physique"
+    },
+    "170": {
+        "nom": "Tempête Verte",
+        "type": "Plante",
+        "discription": "Invoque une tempête de feuilles acérées. Le contrecoup réduit beaucoup l’Attaque Spécial du lanceur.",
+        "puissance": 130,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "171": {
+        "nom": "Téra Explosion",
+        "type": "Normal",
+        "discription": "Si le lanceur est téracristallisé, il libère l’énergie de son type Téracristal. La capacité utilise l’Attaque ou l’Attaque Spécial, selon ce qui infligera le plus de dégâts.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "172": {
+        "nom": "Tir de Précision",
+        "type": "Eau",
+        "discription": "Le lanceur parvient toujours à viser la cible voulue, en ignorant l’effet des talents et des capacités capables de détourner les attaques.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 15,
+        "classe": "Spécial"
+    },
+    "173": {
+        "nom": "Tisse Ombre",
+        "type": "Spectre",
+        "discription": "Une attaque qui coud la cible à son ombre, ce qui l’empêche de s’enfuir.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "174": {
+        "nom": "Torrent de Coups",
+        "type": "Eau",
+        "discription": "Le lanceur assène trois coups fluides à la cible. Cette technique qui inflige toujours un coup critique est réservée à ceux qui maîtrisent la puissance de l’Eau.",
+        "puissance": 25,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "175": {
+        "nom": "Tour Rapide",
+        "type": "Normal",
+        "discription": "Le lanceur attaque en tournant sur lui-même. Sa Vitesse augmente également. Il se libère également des effets de capacités comme Étreinte, Ligotage ou Vampigraine.",
+        "puissance": 50,
+        "precision": 100,
+        "pp": 40,
+        "classe": "Physique"
+    },
+    "176": {
+        "nom": "Tranch’Aqua",
+        "type": "Eau",
+        "discription": "Le lanceur projette de l’eau pressurisée qui entaille la cible comme une lame. Taux de critiques élevé.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "177": {
+        "nom": "Tranch’Herbe",
+        "type": "Plante",
+        "discription": "Des feuilles aiguisées comme des rasoirs entaillent la cible. Taux de critiques élevé.",
+        "puissance": 55,
+        "precision": 95,
+        "pp": 25,
+        "classe": "Physique"
+    },
+    "178": {
+        "nom": "Tranche",
+        "type": "Normal",
+        "discription": "Le lanceur donne un coup de griffe ou de faux. Taux de critiques élevé.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "179": {
+        "nom": "Triplattaque",
+        "type": "Normal",
+        "discription": "Le lanceur envoie trois boules d’énergie simultanément qui peuvent aussi paralyser, brûler ou geler la cible.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 10,
+        "classe": "Spécial"
+    },
+    "180": {
+        "nom": "Triple Plongeon",
+        "type": "Eau",
+        "discription": "Le lanceur effectue des plongeons parfaitement cadencés pour éclabousser la cible et lui infliger des dégâts trois fois d’affilée.",
+        "puissance": 30,
+        "precision": 95,
+        "pp": 10,
+        "classe": "Physique"
+    },
+    "181": {
+        "nom": "Ultimapoing",
+        "type": "Normal",
+        "discription": "La cible reçoit un coup de poing d’une grande puissance.",
+        "puissance": 80,
+        "precision": 85,
+        "pp": 20,
+        "classe": "Physique"
+    },
+    "182": {
+        "nom": "Ultimawashi",
+        "type": "Normal",
+        "discription": "Un coup de pied surpuissant qui frappe la cible.",
+        "puissance": 120,
+        "precision": 75,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "183": {
+        "nom": "Ultralaser",
+        "type": "Normal",
+        "discription": "Le lanceur projette un puissant rayon sur la cible, mais doit se reposer au tour suivant.",
+        "puissance": 150,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "184": {
+        "nom": "Végé-Attaque",
+        "type": "Plante",
+        "discription": "Un violent coup de racines s’abat sur la cible. Le lanceur doit se reposer au tour suivant.",
+        "puissance": 150,
+        "precision": 90,
+        "pp": 5,
+        "classe": "Spécial"
+    },
+    "185": {
+        "nom": "Vengeance",
+        "type": "Normal",
+        "discription": "Le lanceur venge un allié K.O. Si un Pokémon de l’équipe a été mis K.O. au tour d’avant, la puissance augmente.",
+        "puissance": 70,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "186": {
+        "nom": "Vibraqua",
+        "type": "Eau",
+        "discription": "Le lanceur projette une aura aquatique sur la cible, et peut la rendre confuse.",
+        "puissance": 60,
+        "precision": 100,
+        "pp": 20,
+        "classe": "Spécial"
+    },
+    "187": {
+        "nom": "Vitesse Extrême",
+        "type": "Normal",
+        "discription": "Le lanceur charge à une vitesse renversante. Frappe en priorité.",
+        "puissance": 80,
+        "precision": 100,
+        "pp": 5,
+        "classe": "Physique"
+    },
+    "188": {
+        "nom": "Vive-Attaque",
+        "type": "Normal",
+        "discription": "Le lanceur fonce sur la cible si rapidement qu’on parvient à peine à le discerner. Frappe en priorité.",
+        "puissance": 40,
+        "precision": 100,
+        "pp": 30,
+        "classe": "Physique"
+    },
+    "189": {
+        "nom": "Vole-Vie",
+        "type": "Plante",
+        "discription": "Une attaque qui absorbe les nutriments et convertit la moitié des dégâts infligés en PV pour le lanceur.",
+        "puissance": 20,
+        "precision": 100,
+        "pp": 25,
+        "classe": "Spécial"
+    },
+    "190": {
+        "nom": "Vortex Magma",
+        "type": "Feu",
+        "discription": "La cible est prise dans un tourbillon de feu qui dure de quatre à cinq tours.",
+        "puissance": 100,
+        "precision": 75,
+        "pp": 5,
+        "classe": "Spécial"
+    }
+}
