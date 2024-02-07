@@ -8,7 +8,7 @@ import class_combat
 import random
 import json
 import class_dress_enemy
-import ia
+import os
 import choix_pkm_joueur
 from math import floor
 
@@ -227,6 +227,7 @@ class Screen:
                     pygame.display.update()
 
                 pygame.quit()
+                os._exit(0)
 
 
     #fin du combat
@@ -256,7 +257,7 @@ class Screen:
         #creation adversaire
         self.crea_list_adv ()
 
-        #crreation joueur
+        #creation joueur
         self.crea_list_joueur ()
         
 
@@ -311,9 +312,9 @@ class Screen:
             self.crea_button ()
 
             self.affich_overlay_vie_joueur ()
-            self.draw_health_bar(620, 400, 144, 9, (0, 255, 0), self.pkm_joueur.pv, self.pkm_joueur.hp_max)
+            self.draw_health_bar(620, 400, 144, 9, (0, 255, 0), self.pkm_joueur.pv, self.pkm_joueur.pv_max)
             self.affich_overlay_vie_adversaire ()
-            self.draw_health_bar(117, 101, 144, 9, (0, 255, 0), self.pkm_adv.pv, self.pkm_adv.hp_max)
+            self.draw_health_bar(117, 101, 144, 9, (0, 255, 0), self.pkm_adv.pv, self.pkm_adv.pv_max)
 
             pygame.display.flip()
 
