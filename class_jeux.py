@@ -5,6 +5,7 @@ import class_dress_enemy
 import affiche_pokedex
 import json
 import class_combat_graphic
+import class_pkm
 
 mixer.init()
 mixer.music.load("ost/title.mp3")
@@ -62,14 +63,35 @@ class jeux():
                                 pkm_joueur_data = json.load(f)
 
                     # Get data from pokedex.json
-                            with open('pokedex.json', 'r') as f:
+                            with open('pokedex.json', 'r', encoding='utf-8') as f:
                                 pokedex_data = json.load(f)
                                 pokemon_data = pokedex_data.get(self.input_text)
 
                     # Add new entry to pkm_joueur_data
                             new_key = len(pkm_joueur_data) + 1 # Auto-increment key
-                            pkm_joueur_data[str(new_key)] = pokemon_data
 
+                            pokemon_instance = class_pkm.pkm(pokemon_data,  50)
+
+                            # Add new entry to pkm_joueur_data with pv_max
+                            new_entry = {
+                                'id' : pokemon_instance.id,
+                                'nom' : pokemon_instance.nom,
+                                'Type' : pokemon_instance.type,
+                                'nom' : pokemon_instance.nom,
+                                'talent' : pokemon_instance.talent,
+                                'pv' : pokemon_instance.pv,
+                                'atk' : pokemon_instance.atk,
+                                'def' : pokemon_instance.defense,
+                                'atk_spe' : pokemon_instance.atk_spe,
+                                'def_spe' : pokemon_instance.def_spe,
+                                'spe' : pokemon_instance.spe,
+                                'exp' : pokemon_instance.exp,
+                                'evo' : pokemon_instance.evo,
+                                'attaques' : pokemon_instance.attaques,
+                                'pv_max': pokemon_instance.pv_max,  # Add pv_max key with its value
+                                'lvl': pokemon_instance.lv
+                            }
+                            pkm_joueur_data[str(new_key)] = new_entry
                     # Write updated data back to list_pkm_joueur.json
                             with open('list_pkm_joueur.json', 'w') as f:
                                 json.dump(pkm_joueur_data, f)

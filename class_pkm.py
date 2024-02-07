@@ -8,7 +8,7 @@ class pkm():
         self.type = id.get("Type")
         self.talent = id.get("talent")
         self.pv = floor(abs(((2*id.get("pv")+31)*lv)/100)+lv+10)
-        self.pv_max = self.pv = floor(abs(((2*id.get("pv")+31)*lv)/100)+lv+10)
+        self.pv_max = floor(abs(((2*id.get("pv")+31)*lv)/100)+lv+10)
         self.atk = floor(abs(abs((2*id.get("atk")+31)*lv / 100)+5))
         self.defense = floor(abs(abs((2*id.get("def")+31)*lv / 100)+5))
         self.atk_spe = floor(abs(abs((2*id.get("atk_spe")+31)*lv / 100)+5))
@@ -23,7 +23,6 @@ class pkm():
         for i in range(len(id.get("attaques"))):
             self.attaques.append(class_attaque.Attaque(id.get("attaques")[i]).attaque)
         self.sauvage = True
-        self.hp_max = floor(abs(((2*id.get("pv")+31)*lv)/100)+lv+10)
 
     def levelup(self):
         self.lv+=1

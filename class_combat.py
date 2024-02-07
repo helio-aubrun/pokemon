@@ -35,9 +35,9 @@ class combat():
             if self.attaque.type == "Plante" and self.poke_def.type[i] == "Eau":
                 prod = prod * 2
             elif self.attaque.type == "Eau" and self.poke_def.type[i] == "Feu":
-                prod = prod *  2
+                prod = prod * 2
             elif self.attaque.type == "Feu" and self.poke_def.type[i] == "Plante":
-                prod = prod *  2
+                prod = prod * 2
             elif self.attaque.type == "Spectre" and self.poke_def.type[i] == "Spectre":
                 prod = prod * 2
             elif self.attaque.type == "Plante" and self.poke_def.type[i] == "Plante":
