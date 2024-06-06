@@ -3,9 +3,7 @@ import class_pkm
 import json
 import class_dress_enemy
 import class_pkm
-import class_attaque
 import class_combat
-import random
 import json
 import class_dress_enemy
 import os

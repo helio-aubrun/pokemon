@@ -1,9 +1,5 @@
-import class_pkm
 import class_attaque
 import random
-import json
-import class_dress_enemy
-import ia
 
 class combat():
 
