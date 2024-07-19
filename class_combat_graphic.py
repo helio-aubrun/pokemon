@@ -1,6 +1,5 @@
 import pygame
 import class_pkm
-import json
 import class_dress_enemy
 import class_pkm
 import class_attaque
